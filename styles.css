@@ -20,13 +20,18 @@ p{
 
 .projects{
     height: 100vh;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .tutoring{
     height: 100vh;
-    background-color: pink;
+    /* background-color: pink; */
 }
+
+.namespace{
+    padding-top: 20vh;
+}
+
 .everything{
     display: flex;
 }
