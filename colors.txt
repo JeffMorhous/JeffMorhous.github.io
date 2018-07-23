@@ -1,0 +1,5 @@
+English Green: #1A535C
+Turquoise: #4ECDC4
+Mint Cream: #F7FFF7
+Pastel Red: #FF6B6B
+Yellow: FFE66D

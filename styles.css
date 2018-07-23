@@ -3,8 +3,9 @@
     width: 17vw;
     /* border-right: 2px solid rgba(0,0,0,0.14); */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    /* background-color: red; */
+    background-color: #4ECDC4;
     position:fixed; 
+
 }
 p{
     margin-top: 0px;
@@ -20,12 +21,13 @@ p{
 
 .projects{
     height: 100vh;
-    /* background-color: blue; */
+    /* display:flex; */
+    background-color: #F7FFF7;
 }
 
 .tutoring{
     height: 100vh;
-    /* background-color: pink; */
+    background-color:#FF6B6B;
 }
 
 .namespace{
