@@ -1,44 +1,27 @@
-.sidebar{
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.hero {
+    /* Sizing */
+    width: 100vw;
     height: 100vh;
-    width: 17vw;
-    /* border-right: 2px solid rgba(0,0,0,0.14); */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: #4ECDC4;
-    position:fixed; 
 
-}
-p{
-    margin-top: 0px;
-}
-.splash{
-    width: 83vw;
-    background-image: url("./assets/bg2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
-.projects{
-    height: 100vh;
-    /* display:flex; */
-    background-color: #F7FFF7;
-}
-
-.tutoring{
-    height: 100vh;
-    background-color:#FF6B6B;
-}
-
-.namespace{
-    padding-top: 20vh;
-}
-
-.everything{
+        /* Flexbox stuff */
     display: flex;
-}
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
 
-.content{
-    margin-left: 17vw;
-    width: 83vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./assets/bg1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    margin-top: 0em;
 }
