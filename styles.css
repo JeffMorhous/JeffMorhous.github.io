@@ -20,8 +20,21 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.hero h1 {
+.hero h1 { 
     /* Text styles */
     font-size: 5em;
     margin-top: 0em;
+}
+
+.projects{
+     /* Sizing */
+    height: 100vh;
+    padding-top:2vh;
+}
+
+.tutoring{
+    /* Sizing */
+    height: 100vh;
+    padding-top:2vh;
+
 }
