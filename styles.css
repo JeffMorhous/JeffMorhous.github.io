@@ -61,7 +61,16 @@ body {
     right: 0;
   }
  
-.push-apart{
-    padding-right: 2vw;
-    padding-left: 2vw;
+
+a.nav-link:link{
+    color:#ffffff;
+    text-decoration: none;
+}
+a.nav-link:visited{
+    color:#ffffff;
+    text-decoration: none;
+}
+a.nav-link:hover{
+    color:#d6d6d6;
+    text-decoration: none;
 }
