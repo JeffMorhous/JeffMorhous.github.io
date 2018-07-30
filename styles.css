@@ -52,6 +52,11 @@ body {
 }
 
 .row{
-    margin-bottom: 2vh;
-    
+    margin-bottom: 2vh;    
 }
+
+.bottom-align{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
