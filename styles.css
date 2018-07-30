@@ -45,3 +45,13 @@ body {
     height: 100px;
     background-position: 50% 50%;
 }
+
+.center{
+    margin:auto;
+    max-width: 70vw;
+}
+
+.row{
+    margin-bottom: 2vh;
+    
+}
