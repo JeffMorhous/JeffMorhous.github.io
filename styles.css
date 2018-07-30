@@ -34,7 +34,14 @@ body {
 
 .tutoring{
     /* Sizing */
-    height: 100vh;
+    min-height: 100vh;
     padding-top:2vh;
+}
 
+.images-cards{
+    position: relative;
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-position: 50% 50%;
 }
