@@ -25,6 +25,10 @@ body {
     margin-top: 0em;
 }
 
+.card-body p{
+    padding-bottom: 1vh;
+}
+
 .projects{
      /* Sizing */
     min-height: 100vh;
