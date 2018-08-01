@@ -32,6 +32,13 @@ body {
     padding-top:2vh;
 }
 
+.projects h1{
+    text-align: center;
+}
+.projects h3{
+    text-align: center;
+}
+
 .tutoring{
     /* Sizing */
     min-height: 100vh;
