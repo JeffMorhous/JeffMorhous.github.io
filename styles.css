@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Merriweather', serif;
 }
 .hero {
     /* Sizing */
@@ -64,6 +64,12 @@ h3{
 
 .row{
     margin-bottom: 2vh;    
+}
+
+.bio{
+    min-height: 100vh;
+    margin-top: 6vh;
+    padding-top:2vh;
 }
 
 .bottom-align{
