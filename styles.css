@@ -91,3 +91,13 @@ a.nav-link:hover{
     color:#d6d6d6;
     text-decoration: none;
 }
+
+.avatar{
+    width: 85%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+}
+
