@@ -6,6 +6,8 @@ body {
     /* Sizing */
     width: 100vw;
     height: 100vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
 
         /* Flexbox stuff */
     display: flex;
