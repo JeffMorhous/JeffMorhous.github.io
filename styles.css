@@ -8,6 +8,7 @@ body {
     height: 100vh;
     padding-right: 5vw;
     padding-left: 5vw;
+    padding-bottom: 3vh;
 
         /* Flexbox stuff */
     display: flex;
