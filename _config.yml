@@ -4,7 +4,6 @@ title: "Jeff Morhous"
 description: "Software Engineer Specializing in iOS"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: /JeffMorhous
 google_analytics: 'UA-170783059-1'
 include: ["_pages"]
 permalink: /:title/
