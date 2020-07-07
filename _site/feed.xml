@@ -3,10 +3,10 @@
   <channel>
     <title>Jeff Morhous</title>
     <description>Software Engineer Specializing in iOS</description>
-    <link>http://localhost:4000/mediumish-theme-jekyll/</link>
-    <atom:link href="http://localhost:4000/mediumish-theme-jekyll/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Jul 2020 21:26:12 -0400</pubDate>
-    <lastBuildDate>Mon, 06 Jul 2020 21:26:12 -0400</lastBuildDate>
+    <link>http://localhost:4000/JeffMorhous/</link>
+    <atom:link href="http://localhost:4000/JeffMorhous/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 06 Jul 2020 21:55:32 -0400</pubDate>
+    <lastBuildDate>Mon, 06 Jul 2020 21:55:32 -0400</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -88,8 +88,8 @@
 &lt;p&gt;And that’s it! You have a custom textbox that kind of floats above the view you put it in.&lt;/p&gt;
 </description>
         <pubDate>Fri, 15 May 2020 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/how-to-customize-uitextview/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/how-to-customize-uitextview/</guid>
+        <link>http://localhost:4000/JeffMorhous/how-to-customize-uitextview/</link>
+        <guid isPermaLink="true">http://localhost:4000/JeffMorhous/how-to-customize-uitextview/</guid>
         
         
         <category>Tutorial</category>
@@ -121,8 +121,8 @@ window?.rootViewController = ViewController()
 &lt;p&gt;You’re all set up to implement the design of your dreams programmatically, and  &lt;a href=&quot;https://softauthor.com/ios-ui-design-programmatically-xcode-9-swift-4&quot;&gt;here’s a quick reference to help you get the hang of it&lt;/a&gt;!&lt;/p&gt;
 </description>
         <pubDate>Mon, 13 Apr 2020 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/how-to-set-up-programmatic-interfaces-in-ios/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/how-to-set-up-programmatic-interfaces-in-ios/</guid>
+        <link>http://localhost:4000/JeffMorhous/how-to-set-up-programmatic-interfaces-in-ios/</link>
+        <guid isPermaLink="true">http://localhost:4000/JeffMorhous/how-to-set-up-programmatic-interfaces-in-ios/</guid>
         
         
         <category>Tutorial</category>
@@ -150,8 +150,8 @@ window?.rootViewController = ViewController()
 &lt;p&gt;This is a pretty small trick but it may save you tons of time, and honestly it’s just too cool not to set up. Hope this helped, and if you ran in to trouble, let me know below!&lt;/p&gt;
 </description>
         <pubDate>Fri, 03 Apr 2020 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/how-to-wirelessly-test-your-app-on-your-iphone/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/how-to-wirelessly-test-your-app-on-your-iphone/</guid>
+        <link>http://localhost:4000/JeffMorhous/how-to-wirelessly-test-your-app-on-your-iphone/</link>
+        <guid isPermaLink="true">http://localhost:4000/JeffMorhous/how-to-wirelessly-test-your-app-on-your-iphone/</guid>
         
         
         <category>Tutorial</category>
@@ -201,8 +201,8 @@ window?.rootViewController = ViewController()
 &lt;p&gt;Making the switch from Android to the iPhone was a lot like my jump from Windows to Mac. It took me years to work up the guts but I’m definitely not regretting it. Yes, Apple charges significantly more for products that compare equally on a technical level. The “Apple Tax” is very real, and a barrier for many. If you’re trying to decide if that price jump is worth it for you, talk to some friends, and ask them what they like about their iPhone! Go into the Apple store and get hands-on with them 👨‍🔬&lt;/p&gt;
 </description>
         <pubDate>Fri, 27 Mar 2020 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/switching-from-android-to-iphone/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/switching-from-android-to-iphone/</guid>
+        <link>http://localhost:4000/JeffMorhous/switching-from-android-to-iphone/</link>
+        <guid isPermaLink="true">http://localhost:4000/JeffMorhous/switching-from-android-to-iphone/</guid>
         
         
         <category>Products</category>
@@ -252,8 +252,8 @@ window?.rootViewController = ViewController()
 &lt;p&gt;All of these tips not withstanding, remote work gives you the freedom to break these rules when needed. Use this wild pandemic to take advantage of the autonomy remote work offers. Who knows, you may discover that your top job desire is the opportunity for remote work.&lt;/p&gt;
 </description>
         <pubDate>Mon, 16 Mar 2020 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/how-to-handle-college-at-home/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/how-to-handle-college-at-home/</guid>
+        <link>http://localhost:4000/JeffMorhous/how-to-handle-college-at-home/</link>
+        <guid isPermaLink="true">http://localhost:4000/JeffMorhous/how-to-handle-college-at-home/</guid>
         
         
         <category>College</category>
@@ -314,8 +314,8 @@ window?.rootViewController = ViewController()
 &lt;/blockquote&gt;
 </description>
         <pubDate>Thu, 27 Feb 2020 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/how-i-bombed-a-microsoft-interview/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/how-i-bombed-a-microsoft-interview/</guid>
+        <link>http://localhost:4000/JeffMorhous/how-i-bombed-a-microsoft-interview/</link>
+        <guid isPermaLink="true">http://localhost:4000/JeffMorhous/how-i-bombed-a-microsoft-interview/</guid>
         
         
         <category>Tutorial</category>
@@ -399,8 +399,8 @@ window?.rootViewController = ViewController()
 &lt;p&gt;Remember that the person you speak with  &lt;em&gt;wants&lt;/em&gt; to see you succeed, so don’t be intimidated. Ask lots of questions and don’t be afraid to say when you don’t know something!&lt;/p&gt;
 </description>
         <pubDate>Sat, 15 Feb 2020 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/interviewing-for-a-software-engineering-internship-at-amazon/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/interviewing-for-a-software-engineering-internship-at-amazon/</guid>
+        <link>http://localhost:4000/JeffMorhous/interviewing-for-a-software-engineering-internship-at-amazon/</link>
+        <guid isPermaLink="true">http://localhost:4000/JeffMorhous/interviewing-for-a-software-engineering-internship-at-amazon/</guid>
         
         
         <category>Tutorial</category>
@@ -504,8 +504,8 @@ window?.rootViewController = ViewController()
 &lt;p&gt;&lt;a href=&quot;http://jlord.us/git-it/&quot;&gt;Git-it Tutorial&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 27 Jan 2020 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/start-a-new-application-with-vuejs-and-vuetify/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/start-a-new-application-with-vuejs-and-vuetify/</guid>
+        <link>http://localhost:4000/JeffMorhous/start-a-new-application-with-vuejs-and-vuetify/</link>
+        <guid isPermaLink="true">http://localhost:4000/JeffMorhous/start-a-new-application-with-vuejs-and-vuetify/</guid>
         
         
         <category>Tutorial</category>
@@ -618,8 +618,8 @@ window?.rootViewController = ViewController()
 &lt;p&gt;An interesting note is that Pi-hole won’t kill youtube ads, as youtube serves its content and advertisements from the same DNS, so killing youtube ads would also kill youtube.&lt;/p&gt;
 </description>
         <pubDate>Mon, 20 Jan 2020 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/block-ads-for-your-entire-network-with-a-raspberry-pi/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/block-ads-for-your-entire-network-with-a-raspberry-pi/</guid>
+        <link>http://localhost:4000/JeffMorhous/block-ads-for-your-entire-network-with-a-raspberry-pi/</link>
+        <guid isPermaLink="true">http://localhost:4000/JeffMorhous/block-ads-for-your-entire-network-with-a-raspberry-pi/</guid>
         
         
         <category>Tutorial</category>
@@ -681,8 +681,8 @@ window?.rootViewController = ViewController()
 &lt;p&gt;Before you ask, no this article isn’t an advertisement. This app has just been so helpful in helping me organize that I thought it would be great to share. I hope you find it as helpful as I have. By no means do I think my way is the only way when it comes to organization. It works for me, and it will probably work for you. But &lt;strong&gt;you know what would work even better for you? A system you tweak to your liking&lt;/strong&gt;!&lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Jan 2020 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/how-i-use-todoist-to-organize-my-life-as-a-student/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/how-i-use-todoist-to-organize-my-life-as-a-student/</guid>
+        <link>http://localhost:4000/JeffMorhous/how-i-use-todoist-to-organize-my-life-as-a-student/</link>
+        <guid isPermaLink="true">http://localhost:4000/JeffMorhous/how-i-use-todoist-to-organize-my-life-as-a-student/</guid>
         
         
         <category>College</category>
