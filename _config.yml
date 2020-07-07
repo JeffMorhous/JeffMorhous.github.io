@@ -1,0 +1,60 @@
+# Site
+name: "Jeff Morhous"
+title: "Jeff Morhous"
+description: "Software Engineer Specializing in iOS"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: /JeffMorhous
+google_analytics: 'UA-170783059-1'
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  jeff:
+    name: Jeff Morhous
+    display_name: Jeff Morhous
+    gravatar: f9a9dcfcfe808631ad042a6653a27be4
+    email: contact@jeffmorhous.com
+    twitter: https://twitter.com/jeffmorhous
+    description: "Jeff is a Software Consultant specializing in iOS development. He enjoys making new things, fixing old things, and learning from everything."
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

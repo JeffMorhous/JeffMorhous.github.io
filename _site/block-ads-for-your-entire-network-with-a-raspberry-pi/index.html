@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/mediumish-theme-jekyll/assets/images/logo.png">
+
+<title>Block Ads for Your Entire Home Network with a Raspberry Pi | Jeff Morhous</title>
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Block Ads for Your Entire Home Network with a Raspberry Pi | Jeff Morhous</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Block Ads for Your Entire Home Network with a Raspberry Pi" />
+<meta name="author" content="jeff" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I got a Raspberry Pi for my birthday last year and have been suffering analysis paralysis, trying to figure out what I want to do with it." />
+<meta property="og:description" content="I got a Raspberry Pi for my birthday last year and have been suffering analysis paralysis, trying to figure out what I want to do with it." />
+<link rel="canonical" href="http://localhost:4000/mediumish-theme-jekyll/block-ads-for-your-entire-network-with-a-raspberry-pi/" />
+<meta property="og:url" content="http://localhost:4000/mediumish-theme-jekyll/block-ads-for-your-entire-network-with-a-raspberry-pi/" />
+<meta property="og:site_name" content="Jeff Morhous" />
+<meta property="og:image" content="https://miro.medium.com/max/1400/0*TCrEJluo7rbs8Gh0" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-20T00:00:00-05:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Block Ads for Your Entire Home Network with a Raspberry Pi","dateModified":"2020-01-20T00:00:00-05:00","datePublished":"2020-01-20T00:00:00-05:00","url":"http://localhost:4000/mediumish-theme-jekyll/block-ads-for-your-entire-network-with-a-raspberry-pi/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/mediumish-theme-jekyll/block-ads-for-your-entire-network-with-a-raspberry-pi/"},"image":"https://miro.medium.com/max/1400/0*TCrEJluo7rbs8Gh0","author":{"@type":"Person","name":"jeff"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/mediumish-theme-jekyll/assets/images/logo.png"},"name":"jeff"},"description":"I got a Raspberry Pi for my birthday last year and have been suffering analysis paralysis, trying to figure out what I want to do with it.","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<link href="/mediumish-theme-jekyll/assets/css/screen.css" rel="stylesheet">
+
+<link href="/mediumish-theme-jekyll/assets/css/main.css" rel="stylesheet">
+
+<script src="/mediumish-theme-jekyll/assets/js/jquery.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170783059-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-170783059-1');
+</script>
+
+</head>
+
+
+
+
+<body class="layout-post">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/mediumish-theme-jekyll/">
+    <img src="/mediumish-theme-jekyll/assets/images/logo.png" alt="Jeff Morhous">
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/mediumish-theme-jekyll/index.html">Articles</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="/mediumish-theme-jekyll/portfolio">Portfolio</a>
+                </li>
+
+                <script src="/mediumish-theme-jekyll/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/mediumish-theme-jekyll/assets/js/lunrsearchengine.js"></script>
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+<div class="container">
+
+<!-- Site Title
+================================================== -->
+<div class="mainheading">
+    <h1 class="sitetitle">Jeff Morhous</h1>
+    <p class="lead">
+        Software Engineer Specializing in iOS
+    </p>
+</div>
+
+<!-- Content
+================================================== -->
+<div class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Block Ads for Your Entire Home Network with a Raspberry Pi&url=http://localhost:4000/mediumish-theme-jekyll/block-ads-for-your-entire-network-with-a-raspberry-pi/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=http://localhost:4000/mediumish-theme-jekyll/block-ads-for-your-entire-network-with-a-raspberry-pi/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/mediumish-theme-jekyll/block-ads-for-your-entire-network-with-a-raspberry-pi/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+
+        </div>
+
+        <!-- Post -->
+        
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                <!-- Author Box -->
+                
+                <div class="row post-top-meta">
+                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                        
+                        <img class="author-thumb" src="https://www.gravatar.com/avatar/f9a9dcfcfe808631ad042a6653a27be4?s=250&d=mm&r=x" alt="Jeff Morhous">
+                        
+                    </div>
+                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                        <a target="_blank" class="link-dark" href="">Jeff Morhous</a><a target="_blank" href="https://twitter.com/jeffmorhous" class="btn follow">Follow</a>
+                        <span class="author-description">Jeff is a Software Consultant specializing in iOS development. He enjoys making new things, fixing old things, and learning from everything.</span>
+                    </div>
+                </div>
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">Block Ads for Your Entire Home Network with a Raspberry Pi</h1>
+
+            </div>
+
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            
+
+            
+            <img class="featured-image img-fluid" src="https://miro.medium.com/max/1400/0*TCrEJluo7rbs8Gh0" alt="Block Ads for Your Entire Home Network with a Raspberry Pi">
+            
+
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <p>I got a Raspberry Pi for my birthday last year and have been <em>suffering analysis paralysis</em>, trying to figure out what I want to do with it.</p>
+
+<p>I recently came across some  <a href="https://pi-hole.net/">open source software called Pi-hole</a>, that boasts the ability to block ads for your entire network. Perplexed, I had to see how this worked, so here’s how I set up my Raspberry Pi to act as a black hole for all things advertisement related. Not only will you experience a (mostly)  <strong>ad-free internet</strong>, but things like Smart-TV’s and other “sketchy” analytics tools won’t be able to send their data home.  <strong>Hurray privacy!</strong></p>
+
+<p>If you have any questions, leave a response below or feel free to  <a href="http://twitter.com/jeffmorhous">tweet me!</a></p>
+
+<hr />
+
+<h1 id="step-1-aquire-hardware-">Step 1: Aquire Hardware 🖥</h1>
+
+<p>The Raspberry Pi is an incredibly cheap computer, which makes it a great candidate for such a specific task. I’ll put affiliate links to each of the items that I purchased below, for your convenience.</p>
+
+<p>I have the  <a href="https://www.amazon.com/gp/product/B01LPLPBS8/ref=as_li_tl?ie=UTF8&amp;tag=jeffmorhous-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=B01LPLPBS8&amp;linkId=f500311a42eb9157e8bb09d28fbbdb0d"><strong>Raspberry Pi Model 3 Model B</strong></a>, which costs roughly $50. I actually bought  <a href="https://www.amazon.com/gp/product/B07BC7BMHY/ref=as_li_tl?ie=UTF8&amp;tag=jeffmorhous-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=B07BC7BMHY&amp;linkId=4ea6501768e21eee68c1c20cbe40108d">a kit that has a power supply and case</a>, which you may want to do as well. It’s wireless, so I didn’t need an adapter. However, if you buy a model without WiFi, you will need to either wire it into your router with an ethernet cable or buy a WiFi adapter.</p>
+
+<p>You’ll also need a  <a href="https://www.amazon.com/gp/product/B073JYVKNX/ref=as_li_tl?ie=UTF8&amp;tag=jeffmorhous-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=B073JYVKNX&amp;linkId=df3f3cfdac52cbe11f25e46a1c32d62e"><strong>microSD card</strong></a>  to store the operating system (more on that later). If your computer doesn’t have an SD Card Reader, you’ll need an  <a href="https://www.amazon.com/gp/product/B00W02VHM6/ref=as_li_tl?ie=UTF8&amp;tag=jeffmorhous-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=B00W02VHM6&amp;linkId=68cd82405719a6437a054f482d20e3ed"><strong>SD card reader</strong></a>.</p>
+
+<p>If you don’t have it already, you’ll need a simple keyboard. I’m going to assume you have some kind of HDMI display available, like a relatively modern TV, but if you don’t you’ll need that too.  <em>(There is a way to set up a Pi without a keyboard, mouse, or even a screen. It’s called a headless setup, and if you do this, then you can go ahead and skip to step 4)</em></p>
+
+<h1 id="step-2-install-an-operating-system-"><strong>Step 2: Install An Operating System 👨‍💻</strong></h1>
+
+<p>The Raspberry Pi is pretty bare-bones. You can choose your operating system, and I went with  <strong>Raspbian</strong>, an open source port of the Linux operating system.  <a href="https://www.raspberrypi.org/downloads/raspbian/">You can find the downloads here</a>  — it’ll take a hot second, so go ahead and hit download and feel free to read ahead.</p>
+
+<p>Put your microSD card in your computer directly or through whatever adapters necessary. An important note is that I’m on mac, so my instructions here will be as such.  <a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/3">If you’re on Windows, here’s some more generic instructions.</a></p>
+
+<p><a href="https://www.balena.io/etcher/">Download balenaEtcher to help us install Raspbian on the SD card.</a>  Run the .dmg to install it and fire it up.</p>
+
+<p><img src="https://miro.medium.com/max/3212/1*zckppIkSuGw56jJ-w1IOqg.png" alt="balenaEtcher on my machine" /></p>
+
+<p>Click on the blue “select image,” and find the .iso file of Raspbian that you downloaded. Ensure that the center selection is set to your SD card, and hit FLASH! Again, this will probably take a minute ⏰</p>
+
+<p>Finally, eject your SD card and put it in your Pi. Plug in your monitor/TV, keyboard, and mouse</p>
+
+<h1 id="step-3-customize-some-pi-settings">Step 3: Customize Some Pi Settings</h1>
+
+<p>The Pi will ask you for your country and timezone, and then to change the default password — which you’ll definitely want to do for security reasons. Next, your Pi will probably want to update. Again, for security, go ahead and let it do that.  <em>This is probably the longest wait.</em></p>
+
+<h2 id="youll-also-want-to-enable-ssh-so-you-can-control-the-pi-remotely-">You’ll also want to enable SSH, so you can control the Pi remotely 😃</h2>
+
+<p>To do this, open up the terminal in your pie by clicking the icon in the top left corner. Run the following command to get access to ssh (all of these should be run in your pi’s terminal, not your main computer)</p>
+
+<p>sudo apt get install ssh</p>
+
+<p>Enable it with</p>
+
+<p>sudo /etc/init.d/ssh start</p>
+
+<p>Set it to enable ssh every time it boots up with</p>
+
+<p>sudo update-rc.d ssh defaults</p>
+
+<p>To get your Pi’s IP address, run</p>
+
+<p>hostname -I</p>
+
+<h2 id="now-we-switch-back-over-to-your-macs-terminal-where-you-run-the-following">Now we switch back over to your mac’s terminal, where you run the following</h2>
+
+<p>ssh pi@YOUR.PI.IP.ADDRESS</p>
+
+<p>And BINGO, enter your password and you now have remote access to your Raspberry Pi.</p>
+
+<p>Note: It’s also a good idea to change your default SSH port, but we won’t go over that here.</p>
+
+<h1 id="step-4-install-pi-hole">Step 4: Install Pi-hole</h1>
+
+<p>Either in your Pi’s terminal or your computer’s terminal connected to the Pi via SSH, run the following command from Pi-hole’s website to install it:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>curl -sSL https://install.pi-hole.net</td>
+      <td>bash</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The installer will run and ask a bunch of questions. It’s okay to choose the defaults, but feel free to customize like I did.</p>
+
+<p>When the installer finishes it’ll show you the password it selected. Note this and copy it, then change the web dashboard password by executing:</p>
+
+<p>pihole -a -p</p>
+
+<h1 id="step-5-configure-devices-or-router">Step 5: Configure Devices or Router</h1>
+
+<p>Now that your Pi-hole is acting as a DNS server, we need to make sure that your devices use it instead of your ISP. You can do this on a per-device basis, but I’d recommend changing it at your router. That way, every time a device on your network makes a DNS request, it will first go through the Pi-hole.</p>
+
+<p>This step is very specific to the brand of router, so I won’t go into detail. Essentially you need to tell your router to treat your Pi-hole as a DNS server, rather than your ISP. You should also reserve a static IP address for your Pi to ensure it’s IP does not change because this would break your setup.</p>
+
+<p><strong>And Voila, enjoy your ad-free internet! 🙌</strong></p>
+
+<hr />
+
+<h1 id="optional-how-pi-hole-works-">Optional: How Pi-hole Works 🎓</h1>
+
+<p>Normal Ad-Blockers allow advertisements to load and just hide them from your view. Once you’ve gotten the Pi-hole up and running, advertisements will stop dead in their tracks, before they even begin to download.</p>
+
+<p>Pi-hole is a very specific  <a href="https://en.wikipedia.org/wiki/DNS_sinkhole">DNS sinkhole</a>. DNS stands for Domain Name System, and it is the protocol for connecting names (like medium.com) to IP addresses (<a href="https://myip.ms/info/whois/104.16.120.127">104.16.120.127</a>), which is where websites/servers really live on the internet.</p>
+
+<p>A DNS sinkhole acts in place of your usual DNS provider to provide false results. This pretty much breaks your internet — NEAT! With Pi-hole, everything that isn’t an Ad gets forwarded to your DNS provider,  <em>but</em> if the domain name is in Pi-hole’s blacklist (which is customizable for the nerdiest among you), then the Pi-hole sends back a fake IP address.</p>
+
+<p>So you visit a website and it loads. Next, the website asks its ad provider for ads, and Pi-hole says “What ad provider? That doesn’t exist.” And boom your ads are gone. This can actually speed up your network, as you won’t be using as much bandwidth.</p>
+
+<p>An interesting note is that Pi-hole won’t kill youtube ads, as youtube serves its content and advertisements from the same DNS, so killing youtube ads would also kill youtube.</p>
+
+            </div>
+
+            <!-- Rating -->
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2020-01-20">20 Jan 2020</time></span>           
+                
+                </small>
+            </p>
+
+            <!-- Post Categories -->
+            <div class="after-post-cats">
+                <ul class="tags mb-4">
+                    
+                    
+                    <li>
+                        <a class="smoothscroll" href="/mediumish-theme-jekyll/categories#Project">Project</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/mediumish-theme-jekyll/categories#Tutorial">Tutorial</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- End Categories -->
+
+            <!-- Post Tags -->
+            <div class="after-post-tags">
+                <ul class="tags">
+                    
+                    
+                </ul>
+            </div>
+            <!-- End Tags -->
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="/mediumish-theme-jekyll//how-i-use-todoist-to-organize-my-life-as-a-student/"> &laquo; How I Use Todoist To Organize My Life As A Student</a>
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="/mediumish-theme-jekyll//start-a-new-application-with-vuejs-and-vuetify/">Start a New Application with Vue.js and Vuetify &raquo; </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+</div>
+
+    
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © 2020 Jeff Morhous 
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a href="mailto:hireme@jeffmorhous.com?subject=Freelance Work Inquiry">Contact me</a> if you'd like a site designed!
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts
+================================================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="/mediumish-theme-jekyll/assets/js/mediumish.js"></script>
+
+
+
+<script src="/mediumish-theme-jekyll/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+</body>
+</html>

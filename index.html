@@ -1,263 +1,61 @@
-<!DOCTYPE html>
-<html>
-<title>Jeff Morhous - Software Engineer</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "IBM+Plex+Mono", monospace}
+---
+layout: default
+title: Home
+---
 
-body, html {
-  height: 100%;
-  line-height: 1.8;
-	scroll-behavior: smooth;
-}
+{% if page.url == "/" %}
 
-.w3-bar .w3-button {
-  padding: 16px;
-}
-
-.play-button{
-    height: 50px;
-}
-
-.arrow {
-  position: absolute;
-  box-sizing: border-box;
-  height: 5vw;
-  width: 5vw;
-  border-style: solid;
-  border-color: white;
-  border-width: 0px 1px 1px 0px;
-  transform: rotate(45deg);
-  transition: border-width 150ms ease-in-out;
-  bottom:48px;
-  right:50%;
-}
-
-.arrow:hover {
-  border-bottom-width: 4px;
-  border-right-width: 4px;
-}
-
-
-.avatar{
-    width: 75%;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4rem;
-}
-
-.w3-card {
-  min-height: 44rem;
-}
-
-</style>
-<body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar" style="color: #ff5757; background-color: #1f1f1f;">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">Jeff Morhous</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#projects" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PROJECTS</a>
-      <a href="#now" class="w3-bar-item w3-button"><i class="fa fa-clock"></i> NOW</a>
+<!-- Featured
+================================================== -->
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span>Featured</span></h2>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <div class="row">
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
+    {% for post in site.posts %}
+
+        {% if post.featured == true %}
+
+            {% include featuredbox.html %}
+
+        {% endif %}
+
+    {% endfor %}
+
+    </div>
+</section>
+
+{% endif %}
+
+<!-- Posts Index
+================================================== -->
+<section class="recent-posts">
+
+    <div class="section-title">
+
+        <h2><span>All Stories</span></h2>
+
+    </div>
+
+    <div class="row listrecent">
+
+        {% for post in paginator.posts %}
+
+        {% include postbox.html %}
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<div class="pointerup"><i class="fa fa-caret-up"></i></div>
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
-  <a href="#now" onclick="w3_close()" class="w3-bar-item w3-button">NOW</a>
-</nav>
-
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h2 class="w3-center">Hello there, I'm Jeff, a 3rd year student in Computer Science and Engineering at The Ohio State University 🎓</h2>
-  <h4 class="w3-center">I'm always open to discussing freelance work! Please <a href="mailto:hireme@jeffmorhous.com?subject=Freelance Work Inquiry">reach out via email,</a> Twitter or LinkedIn!</h4>
-  <div class="w3-row-padding" style="margin-top:64px; padding-right: 6%; padding-left:6% ">
-    <div class="w3-half">
-      <p>Creating new things excites me, and that's one of the many reasons I’m pursuing a career in Software Engineering.
-        I have interned at Fidelity investments during the past 2 summers, where I loved putting the fundamentals I learned
-        in my first and second years of school to work! I’m a very hands on learner, so I like to work on side projects, and
-        also do iOS contracting. Outside of school and work, I like to play guitar, hike, work on cars, and act as a servant
-        leader in my church. I’m always looking for the best opportunity to expand my knowledge and skill set while making
-        a positive impact. 
-      </p>
-      <h3>Here are some ways you can get to know me 🤝</h3>
-      <br>
-      <div class="w3-center" style=" display: flex; justify-content: space-between;">
-        <span><a href="https://medium.com/@jeffmorhous"><i class="fab fa-medium w3-hover-opacity fa-5x"></i></a></span>
-        <span><a href="https://www.linkedin.com/in/jeffery-morhous/"><i class="fab fa-linkedin w3-hover-opacity fa-5x"></i></a></span>
-        <span><a href="https://github.com/jeffmorhous"><i class="fab fa-github w3-hover-opacity fa-5x"></i></a></span>
-        <span><a href="https://twitter.com/jeffmorhous"><i class="fab fa-twitter w3-hover-opacity fa-5x"></i></a></span>
-      </div>
-      <br>
-      <h3>Sometimes I write about my work - here's what's recent ✍️</h3>
-      <a href="https://levelup.gitconnected.com/how-to-handle-college-at-home-238bf77f1b99?source=friends_link&sk=9642151fee54770a1a035467d1696cd5">How To Handle College at Home</a>
-      <br>
-      <a href="https://levelup.gitconnected.com/interviewing-for-a-software-engineering-internship-at-amazon-9ff2ed809193?source=friends_link&sk=3a0867dab640de589c725f8b4da90d98">Interviewing For a Software Engineering Internship at Amazon</a>
-      <br>
-      <a href="https://levelup.gitconnected.com/start-a-new-application-with-vue-js-and-vuetify-dad9778bd5e3?source=friends_link&sk=6e0f9522e20b5e399c5e3faf042ddb4d">Start a New Application with Vue.js and Vuetify</a>
-      <br>
-      <a href="https://levelup.gitconnected.com/block-ads-for-your-entire-home-network-with-a-raspberry-pi-ff861eaee630?source=friends_link&sk=abcf939314759d3daff1ff4b87661eff">How I used a Raspberry Pi to create a DNS sinkhole for my whole network</a>
-      <br>
-      <a href="https://medium.com/swlh/how-i-use-todoist-to-organize-my-life-as-a-student-8c95d5597a1d?source=friends_link&sk=5cdc006415567f1db52f83684016fe1a">How I use Todoist to Organize My Life As a Student</a>
-      <br>
-      <a href="https://medium.com/swlh/should-i-learn-to-make-apps-on-ios-or-android-fe8e92002aae?source=friends_link&sk=ba4ad39959c872c43ed95a34fbf8cb80">Should I Learn to Make Apps on iOS or Android?</a>
-      <br>
-      <a href="https://medium.com/@jeffmorhous/buckeye-trek-exploring-silicon-valley-503883ab0129">Buckeye Trek - Exploring Silicon Valley</a>
-      <br>
-    </div>
-    <div class="w3-half">
-      <img src="./profHeadshot2.jpeg" alt="Avatar" class="avatar">
-    </div>
-   
-  </div>
-</div>
-
-<!-- Projects Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 12%" id="projects">
-  <h3 class="w3-center">MY PROJECTS</h3>
-  <p class="w3-center w3-large">Take a look at some of the fun things I've made</p>
-
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class=" l3 m6 w3-margin-bottom w3-half">
-      <div class="w3-card">
-        <img src="JackDemo.png" alt="Resume Ripper Image" style="width:100%; overflow:hidden;">
-        <div class="w3-container">
-          <h3>Jack The Resume Ripper</h3>
-          <p class="w3-opacity">Web App (Nov. 2019)</p>
-          <p>Collaborated on a team of 3 for OSU's 2019 Hackathon to create a web app leveraging Vue.js, AWS Lambda, and Azure Cognitive Services
-            to parse insights out of resumes. Focused on Front-End Design.
-          </p>
-          <span></span>
-          <a href="https://www.youtube.com/watch?v=vfvaiR9Y6nI"><p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-youtube"></i> See Demo</button></p></a>
-        </div>
-      </div>
-    </div>
-    <div class=" l3 m6 w3-margin-bottom w3-half">
-      <div class="w3-card">   
-        <img src="Rotato3.png" alt="Resume Ripper Image" style="width:100%; overflow:hidden;">
-        <div class="w3-container">
-          <h3>Study Buddy</h3>
-          <p class="w3-opacity">iOS App (Oct 2019)</p>
-          <p>A fun iOS app for tracking study habits and reducing distractions. Created for a client, working to meet project requirements and deadlines.
-            Utilized Core Data and monetized using AdMob. Published on the App Store.
-          </p>
-          <a href="https://apps.apple.com/us/app/the-study-buddy/id1481716051?ls=1"><p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-app-store"></i> App Store</button></p></a>
-        </div>
-      </div>
-    </div>
-    <div class=" l3 m6 w3-margin-bottom w3-half">
-      <div class="w3-card">
-        <img src="MMW1.png" alt="Mock My Words Image" style="width:100%;">
-        <div class="w3-container">
-          <h3>Mock My Words</h3>
-          <p class="w3-opacity">Android App (March 2019)</p>
-          <p>Seen that meme of everyone's favorite cartoon character mOcKing wItH soMe aLteRnaTinG teXt?
-            Monetized using Google Admob, integrated analytics using Firebase, and published on Play Store.
-          </p>
-          <a href="https://play.google.com/store/apps/details?id=morhous.jeffery.mockmywords"><p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-google-play"></i> Google Play</button></p></a>
-        </div>
-      </div>
-    </div>
-    <div class=" l3 m6 w3-margin-bottom w3-half">
-      <div class="w3-card">
-        <img src="FeatureGraphic2.JPG" alt="What Are The Odds App" style="width:100%;">
-        <div class="w3-container">
-          <h3>What Are The Odds</h3>
-          <p class="w3-opacity">Android App (Dec. 2018)</p>
-          <p>Simple game where one person dares another to do a ridiculous task. The app adds to the fun by truly randomly generating the numbers, eliminating cheating.
-            Monetized using Google Admob and published on the Play Store.
-          </p>
-          <a href="https://play.google.com/store/apps/details?id=feature.a.its.bug.a.not.its.whataretheodds"><p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-google-play"></i> Google Play</button></p></a>
-        </div>
-      </div>
-    </div>
-    <div class=" l3 m6 w3-margin-bottom w3-half">
-      <div class="w3-card">
-        <img src="socialMediaModerator.png" alt="What Are The Odds App" style="width:100%;">
-        <div class="w3-container">
-          <h3>Social Media Content Moderator</h3>
-          <p class="w3-opacity">Android App (Oct. 2018)</p>
-          <p>Worked with a team of 4 at OSU's Hackathon to create an android app that screens text and images (using Microsoft Azure Cognitivie Services) for nudity, drugs, and alcohol before allowing you to publish to Facebook and Instagram.
-          </p>
-          <a href="https://github.com/JeffMorhous/HackOHIO2018"><p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-github"></i> See More</button></p></a>
-        </div>
-      </div>
-    </div>
-    <div class=" l3 m6 w3-margin-bottom w3-half">
-      <div class="w3-card">
-        <img src="AEV.jpg" alt="What Are The Odds App" style="width:100%;">
-        <div class="w3-container">
-          <h3>Fundamentals of Engineering II AEV Project</h3>
-          <p class="w3-opacity">Academic Project (Spring. 2018)</p>
-          <p>For Fundamentals of Engineering II at Ohio State, I worked with a group of 4 to design and produce protoype for a monrail vehicle to efficently transport people. The project involved hardware design using SolidWorks, as
-            well as programming for Arduino.
-          </p>
-          <a href="https://u.osu.edu/engr1882h/team-p/"><p><button class="w3-button w3-light-grey w3-block">See More</button></p></a>
-        </div>
-      </div>
-    </div>
-    </div>
-</div>
-
-<!-- Now Section -->
-<div class="w3-container" style="padding:128px 16px" id="now">
-  <h3 class="w3-center">What am I up to now?</h3>
-  <p class="w3-center w3-large">Right now, I'm in my 3rd year of Computer Science and Engineering at Ohio State University.</p>
-  <p class="w3-center w3-large">I'm also doing freelance work; mostly iOS development, but also some Ruby on Rails.</p>
-  <p class="w3-center w3-large">Lastly, I'm investing in my soft skills by reading a lot and writing on Medium!</p>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#about" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-        <a href="https://medium.com/@jeffmorhous"><i class="fab fa-medium w3-hover-opacity"></i></a>
-        <a href="https://www.linkedin.com/in/jeffery-morhous/"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
-        <a href="https://twitter.com/jeffmorhous"><i class="fab fa-twitter w3-hover-opacity"></i></a>
-        <a href="https://play.google.com/store/apps/dev?id=6731969051819941531"><i class="fab fa-google-play w3-hover-opacity"></i></a>
-        <a href="https://www.github.com/jeffmorhous"><i class="fab fa-github w3-hover-opacity"></i></a>
-
-  </div>
-  <p>Copyright 2020</p>
-</footer>
- 
-
-<script>
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
-</body>
-</html>
