@@ -5,9 +5,56 @@
     <description>Software Engineer Specializing in iOS</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Jul 2020 21:57:51 -0400</pubDate>
-    <lastBuildDate>Mon, 06 Jul 2020 21:57:51 -0400</lastBuildDate>
+    <pubDate>Tue, 14 Jul 2020 20:50:37 -0400</pubDate>
+    <lastBuildDate>Tue, 14 Jul 2020 20:50:37 -0400</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>How To Give Your ViewController An Activity Indicator</title>
+        <description>&lt;p&gt;UIKit provides a nifty little spinning wheel we can display to the user when we’re waiting on something that the user can’t see. It’s considered a best practice to pop one of these up when doing something like a network call, so the person using our app isn’t clueless as to what’s going on. Basically, you create the spinner, and add it to your view. Then, just before a background task like an API request, tell it to animate. When the background request finishes, you just tell it to stop animating.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;First, declare your spinner in the ViewController&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;var activityIndicator = UIActivityIndicatorView(style: .Large)
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Inside viewDidLoad, or a method called by viewDidLoad, add the spinner to your view&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+view.addSubview(activityIndicator)
+activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = **true**
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Before you make your background task, start the spinner&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;activityIndicator.startAnimating()
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;And when the background task completes, stop the spinner!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;self.activityIndicator.stopAnimating()
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This is such a small UI feature that has a huge benefit. If you implement it correctly, the people that use your app will probably never consciously notice it. But if you don’t implement this, users will likely feel like your app is slow, or mistake a normal wait time for a buggy freeze of the app. Hope you got some value out of this, I know your users will!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 Jul 2020 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/how-to-give-your-viewcontroller-an-activityindicator/</link>
+        <guid isPermaLink="true">http://localhost:4000/how-to-give-your-viewcontroller-an-activityindicator/</guid>
+        
+        
+        <category>Tutorial</category>
+        
+      </item>
     
       <item>
         <title>How To Customize UITextView</title>
@@ -625,67 +672,6 @@ window?.rootViewController = ViewController()
         <category>Tutorial</category>
         
         <category>Project</category>
-        
-      </item>
-    
-      <item>
-        <title>How I Use Todoist To Organize My Life As A Student</title>
-        <description>&lt;h2 id=&quot;why-should-i-care&quot;&gt;Why Should I Care?&lt;/h2&gt;
-
-&lt;p&gt;Failing to plan is planning to fail.  I stand by the idea that careful planning is  &lt;strong&gt;THE KEY&lt;/strong&gt;  to being successful at anything you want to do. Investing time and energy into a carefully curated planner (as well as calendar) will pay dividends on your way to success. Keeping up with this will let you get done the things you want, in the midst of getting done the things you must.&lt;/p&gt;
-
-&lt;p&gt;I have a lot going on. I’m a student, an app developer, a freelance developer, a roommate, a job seeker, a boyfriend, the list goes on. I used to keep all my school assignments in a little planner notebook, and pencil in other stuff for life. All too often, this would lead to confusion and chaos, as I forgot important things that weren’t related to school,  &lt;strong&gt;things I actually wanted to do more than homework&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Then I found  &lt;a href=&quot;https://win.todoist.com/overview&quot;&gt;Todoist&lt;/a&gt;. Todoist is a handy application that I have on my phone, iPad, and Macbook. It lets me dump all those tedious tasks into one place, so my mind is free to work unencumbered by the stress that I might have something coming up that I forgot about.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;how-i-organize-my-projects&quot;&gt;How I Organize My “Projects”&lt;/h2&gt;
-
-&lt;p&gt;During the first week of the semester, I dump everything from every class into Todoist, and then never think about that again. It’s a ton of work upfront, but I put in every homework assignment, project, paper, and exam into Todoist.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/3876/1*l4c0EtvQfiD57weaZ1f0uA.png&quot; alt=&quot;My Todoist Setup&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I have quite a few projects, because I try to never add a task without assigning it to a project. The first one is  &lt;strong&gt;Self Care&lt;/strong&gt;, which a lot of general stuff falls into. The next is  &lt;strong&gt;Financial&lt;/strong&gt;, where I keep track of things like bills and have tasks to review my budget. The next is  &lt;strong&gt;Career&lt;/strong&gt;, where I track things I do for my long term career, like interview prep, reading, or writing articles like this one. The next is  &lt;strong&gt;School&lt;/strong&gt;, and here I put all administrative school tasks 😥. Beneath it, I have a project for each of my classes — I’m super excited for web apps this semester! After that, I have a project called  &lt;strong&gt;Freelancing&lt;/strong&gt;, where I put administrative stuff for the freelance development work I do (sending invoices, finding clients, etc). I have a subproject for each client I’ve had beneath that as well. I also have a project for all my  &lt;strong&gt;Apartment&lt;/strong&gt; necessities, like chores and meal prep. Another project is for  &lt;strong&gt;My Girlfriend,&lt;/strong&gt;  where I’ll put little things like picking up flowers or planning dates.  &lt;strong&gt;General Tech&lt;/strong&gt; is used to hold things like sorting through photos, tidying up my hard drive, and other small computer stuff. Lastly,  &lt;strong&gt;Side Projects&lt;/strong&gt;  holds todo’s for different side projects I work on, like  &lt;a href=&quot;https://play.google.com/store/apps/details?id=morhous.jeffery.mockmywords&amp;amp;hl=en_us&quot;&gt;Mock My Words.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;You probably noticed that I have emoji’s next to each project, this is a must for keeping things nice and positive 🤩. Combine this with color coordination, and auditing how you’re spending your time becomes super easy.&lt;/p&gt;
-
-&lt;p&gt;Some days I’ll have a dozen tasks, some days I’ll have none (vacation is great). The important thing, is that at the end of the day, all your tasks are either complete or rescheduled. This ensures that you don’t have a ton of overdue tasks just piling up, because thats discouraging and MESSY.&lt;/p&gt;
-
-&lt;h2 id=&quot;adding-hard-deadline-tasks&quot;&gt;Adding Hard Deadline Tasks👨‍💻&lt;/h2&gt;
-
-&lt;p&gt;A planner like this is most helpful when you have access to it all the time. Having it on my phone, iPad, and computer ensures that whenever I find out I need (&lt;em&gt;or want&lt;/em&gt;) to do something, I can jot down whatever it is really quick, and then not have to worry about remembering it. You’d be surprised how much mental capacity this frees up.&lt;/p&gt;
-
-&lt;p&gt;Todoist is crazy smart. It will recognize plenty of keyboard shortcuts. Let’s say a professor for my sociology course assigns a paper due on February 10th.. Here’s what I’ll type into Todoist — (if you’re on a computer, you can hit “Q” to open the new task prompt)&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Paper Due #Sociology p1 Feb 10&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This creates a task with the title “Paper Due”, puts it in the project “Sociology”, gives it a due date of February 10th, and assigns it a priority 1.&lt;/p&gt;
-
-&lt;p&gt;I use priorities because sometimes there’s not enough time in the day, and it’s nice to see what absolutely has to get done really easily. School assignments always get a priority 1 (p1), because I try to make a habit of doing those on time 😆 . The priorities are also color coded red, yellow, blue, and grey in that order.&lt;/p&gt;
-
-&lt;h2 id=&quot;adding-no-deadline-tasks-&quot;&gt;Adding NO Deadline Tasks 🤔&lt;/h2&gt;
-
-&lt;p&gt;Oftentimes, there’s something I just  &lt;em&gt;want&lt;/em&gt;  to get done but it doesn’t necessarily have a due date. I just don’t want to forget about it.&lt;/p&gt;
-
-&lt;p&gt;Todoist helps with that too! At some point recently, I did a  &lt;a href=&quot;http://jeffmorhous.github.io/&quot;&gt;website redesign&lt;/a&gt;. I put dozens of incremental steps for this as tasks in my “Side Projects” project, and ordered them in the order that I wanted to. Then, when I new I had some time to work on one of them, I’d tag it with “today” to add it to my daily list.&lt;/p&gt;
-
-&lt;h2 id=&quot;breaking-down-tasks-&quot;&gt;Breaking Down Tasks 💡&lt;/h2&gt;
-
-&lt;p&gt;If I have a big task, like a paper, it’s common that I’ll add some subtasks to help me make progress towards it. Things like “Write Comprehensive Outline,” “Write 3 Pages of Rough Draft,” and “Go Over With Professor In Office Hours” ensure that I’m not procastinating. It can be incredibly deceptive to see something like “Mail Letter” and “Write 30 Page Paper,” thinking they’ll take the same amount of time. Break things down! Then, assign those subtasks a lower priority then the main task, and give them each a due date!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Before you ask, no this article isn’t an advertisement. This app has just been so helpful in helping me organize that I thought it would be great to share. I hope you find it as helpful as I have. By no means do I think my way is the only way when it comes to organization. It works for me, and it will probably work for you. But &lt;strong&gt;you know what would work even better for you? A system you tweak to your liking&lt;/strong&gt;!&lt;/p&gt;
-</description>
-        <pubDate>Tue, 07 Jan 2020 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/how-i-use-todoist-to-organize-my-life-as-a-student/</link>
-        <guid isPermaLink="true">http://localhost:4000/how-i-use-todoist-to-organize-my-life-as-a-student/</guid>
-        
-        
-        <category>College</category>
         
       </item>
     

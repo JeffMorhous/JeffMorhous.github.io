@@ -6,24 +6,24 @@
 
 <link rel="icon" href="/assets/images/logo.png">
 
-<title>What Is Recursion Anyways? | Jeff Morhous</title>
+<title>How To Give Your ViewController An Activity Indicator | Jeff Morhous</title>
 
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>What Is Recursion Anyways? | Jeff Morhous</title>
+<title>How To Give Your ViewController An Activity Indicator | Jeff Morhous</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="What Is Recursion Anyways?" />
+<meta property="og:title" content="How To Give Your ViewController An Activity Indicator" />
 <meta name="author" content="jeff" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Has a problem ever seemed too overwhelming to you to think about? Most people would recommend breaking it down as small as possible to make it manageable, and that’s exactly what recursion is!" />
-<meta property="og:description" content="Has a problem ever seemed too overwhelming to you to think about? Most people would recommend breaking it down as small as possible to make it manageable, and that’s exactly what recursion is!" />
-<link rel="canonical" href="http://localhost:4000/what-is-recursion-anyways/" />
-<meta property="og:url" content="http://localhost:4000/what-is-recursion-anyways/" />
+<meta name="description" content="UIKit provides a nifty little spinning wheel we can display to the user when we’re waiting on something that the user can’t see. It’s considered a best practice to pop one of these up when doing something like a network call, so the person using our app isn’t clueless as to what’s going on. Basically, you create the spinner, and add it to your view. Then, just before a background task like an API request, tell it to animate. When the background request finishes, you just tell it to stop animating." />
+<meta property="og:description" content="UIKit provides a nifty little spinning wheel we can display to the user when we’re waiting on something that the user can’t see. It’s considered a best practice to pop one of these up when doing something like a network call, so the person using our app isn’t clueless as to what’s going on. Basically, you create the spinner, and add it to your view. Then, just before a background task like an API request, tell it to animate. When the background request finishes, you just tell it to stop animating." />
+<link rel="canonical" href="http://localhost:4000/how-to-give-your-viewcontroller-an-activityindicator/" />
+<meta property="og:url" content="http://localhost:4000/how-to-give-your-viewcontroller-an-activityindicator/" />
 <meta property="og:site_name" content="Jeff Morhous" />
-<meta property="og:image" content="https://miro.medium.com/max/1400/0*LPLCjT_SUObUwLl_" />
+<meta property="og:image" content="https://miro.medium.com/max/1400/0*ybjK_NN1aGJ7eSok" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-01-03T00:00:00-05:00" />
+<meta property="article:published_time" content="2020-07-14T00:00:00-04:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"What Is Recursion Anyways?","dateModified":"2020-01-03T00:00:00-05:00","datePublished":"2020-01-03T00:00:00-05:00","url":"http://localhost:4000/what-is-recursion-anyways/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/what-is-recursion-anyways/"},"image":"https://miro.medium.com/max/1400/0*LPLCjT_SUObUwLl_","author":{"@type":"Person","name":"jeff"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"jeff"},"description":"Has a problem ever seemed too overwhelming to you to think about? Most people would recommend breaking it down as small as possible to make it manageable, and that’s exactly what recursion is!","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","headline":"How To Give Your ViewController An Activity Indicator","dateModified":"2020-07-14T00:00:00-04:00","datePublished":"2020-07-14T00:00:00-04:00","url":"http://localhost:4000/how-to-give-your-viewcontroller-an-activityindicator/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/how-to-give-your-viewcontroller-an-activityindicator/"},"image":"https://miro.medium.com/max/1400/0*ybjK_NN1aGJ7eSok","author":{"@type":"Person","name":"jeff"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"jeff"},"description":"UIKit provides a nifty little spinning wheel we can display to the user when we’re waiting on something that the user can’t see. It’s considered a best practice to pop one of these up when doing something like a network call, so the person using our app isn’t clueless as to what’s going on. Basically, you create the spinner, and add it to your view. Then, just before a background task like an API request, tell it to animate. When the background request finishes, you just tell it to stop animating.","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -152,19 +152,19 @@
     </p>
     <ul>
         <li class="ml-1 mr-1">
-            <a target="_blank" href="https://twitter.com/intent/tweet?text=What Is Recursion Anyways?&url=http://localhost:4000/what-is-recursion-anyways/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=How To Give Your ViewController An Activity Indicator&url=http://localhost:4000/how-to-give-your-viewcontroller-an-activityindicator/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <i class="fab fa-twitter"></i>
             </a>
         </li>
 
         <li class="ml-1 mr-1">
-            <a target="_blank" href="https://facebook.com/sharer.php?u=http://localhost:4000/what-is-recursion-anyways/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=http://localhost:4000/how-to-give-your-viewcontroller-an-activityindicator/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
                 <i class="fab fa-facebook-f"></i>
             </a>
         </li>
 
         <li class="ml-1 mr-1">
-            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/what-is-recursion-anyways/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/how-to-give-your-viewcontroller-an-activityindicator/" onclick="window.open(this.href, 'width=550,height=435');return false;">
                 <i class="fab fa-linkedin-in"></i>
             </a>
         </li>
@@ -205,7 +205,7 @@
                 
 
                 <!-- Post Title -->
-                <h1 class="posttitle">What Is Recursion Anyways?</h1>
+                <h1 class="posttitle">How To Give Your ViewController An Activity Indicator</h1>
 
             </div>
 
@@ -217,7 +217,7 @@
             
 
             
-            <img class="featured-image img-fluid" src="https://miro.medium.com/max/1400/0*LPLCjT_SUObUwLl_" alt="What Is Recursion Anyways?">
+            <img class="featured-image img-fluid" src="https://miro.medium.com/max/1400/0*ybjK_NN1aGJ7eSok" alt="How To Give Your ViewController An Activity Indicator">
             
 
             
@@ -228,36 +228,41 @@
                 <!-- Toc if any -->
                 
                 <!-- End Toc -->
-                <p>Has a problem ever seemed too overwhelming to you to think about? Most people would recommend breaking it down as small as possible to make it manageable, and that’s exactly what recursion is!</p>
+                <p>UIKit provides a nifty little spinning wheel we can display to the user when we’re waiting on something that the user can’t see. It’s considered a best practice to pop one of these up when doing something like a network call, so the person using our app isn’t clueless as to what’s going on. Basically, you create the spinner, and add it to your view. Then, just before a background task like an API request, tell it to animate. When the background request finishes, you just tell it to stop animating.</p>
 
-<p>Technically, recursion is  <a href="https://www.geeksforgeeks.org/recursion/">“The process in which a function calls itself directly or indirectly.”</a>  If a function calls itself, we refer to it as a  <strong>recursive function</strong>.</p>
+<p><strong>First, declare your spinner in the ViewController</strong></p>
 
-<p>At first glance, this seems like a nightmere. However, it can be an invaluable tool in solving programming problems. Let’s take a look at a famous search algorithm.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>var activityIndicator = UIActivityIndicatorView(style: .Large)
+</pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>Imagine you’re a teacher, and you have a stack of graded papers that you’ve already sorted alphabetically by last name. If you were looking for the last name, “Patrick,” what would you do? Think about it for a minute…</p>
+<p><strong>Inside viewDidLoad, or a method called by viewDidLoad, add the spinner to your view</strong></p>
 
-<p>One approach might be to start at the beginning of the stack, and flip through each paper until you found “Patrick.” This is an example of a  <strong>linear search</strong>, and it’s not always the fastest solution here.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+view.addSubview(activityIndicator)
+activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = **true**
+</pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>Another intuitive approach is  <strong>binary search</strong>, which you’ve likely utilized in real life without even knowing what it is. To do a binary search, you start by flipping to the middle of the stack and seeing where you are in the alphabet. If the name is before Patrick, you know that Patrick is on the bottom half of the stack. If the name you’re holding is after Patrick, you know that Patrick is in the top half of the stack. No that you know that, you  <em>just do another binary search on the appropriate half</em>  of the stack!</p>
+<p><strong>Before you make your background task, start the spinner</strong></p>
 
-<p>You can repeat this process until you hit Patrick, and each binary search that you do will cut your total papers in half. If you started with 100 papers, you could have it narrowed down to 25 by only looking at 2 papers! This incredibly powerful but somehow still simple algorithm is likely the perfect example of recursion.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>activityIndicator.startAnimating()
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>And when the background task completes, stop the spinner!</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>self.activityIndicator.stopAnimating()
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <hr />
 
-<h2 id="for-recursion-to-work-we-need-2-things-to-be-true">For recursion to work, we need 2 things to be true:</h2>
-
-<ol>
-  <li>For a small enough problem, we know the answer. (IE: When the name we’re looking at is Patrick, we’re holding the right paper)</li>
-  <li>The problem set must get smaller every time we recurse (IE: We discard half our stack of papers)</li>
-</ol>
-
-<p>It’s also important to note that anything you can use recursion on could be solved without recursion. Once you wrap your head around the concept, crazy complex problems have simple and elegant recursive solutions. This is especially helpful when it becomes time to translate your abstract algorithm into code.</p>
-
-<p>Now that you know what recursion is, what massive problems will you solve one step at a time?</p>
-
-<hr />
-
-<p>Enjoy this article? Leave a comment below telling me what you think! This is part of my larger effort to improve my technical communication skills, explaining technical, nerdy topics in nontechnical, engaging ways!</p>
+<p>This is such a small UI feature that has a huge benefit. If you implement it correctly, the people that use your app will probably never consciously notice it. But if you don’t implement this, users will likely feel like your app is slow, or mistake a normal wait time for a buggy freeze of the app. Hope you got some value out of this, I know your users will!</p>
 
             </div>
 
@@ -267,7 +272,7 @@
             <!-- Post Date -->
             <p>
             <small>
-                <span class="post-date"><time class="post-date" datetime="2020-01-03">03 Jan 2020</time></span>           
+                <span class="post-date"><time class="post-date" datetime="2020-07-14">14 Jul 2020</time></span>           
                 
                 </small>
             </p>
@@ -297,10 +302,8 @@
             <!-- Prev/Next -->
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             
-            <a class="prev d-block col-md-6" href="//what-programming-language-should-i-learn/"> &laquo; What Programming Language Should I Learn?</a>
+            <a class="prev d-block col-md-6" href="//how-to-customize-uitextview/"> &laquo; How To Customize UITextView</a>
             
-            
-            <a class="next d-block col-md-6 text-lg-right" href="//how-i-use-todoist-to-organize-my-life-as-a-student/">How I Use Todoist To Organize My Life As A Student &raquo; </a>
             
             <div class="clearfix"></div>
             </div>
