@@ -69,6 +69,10 @@
 <lastmod>2020-07-14T00:00:00-04:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/my-favorite-productivity-tips/</loc>
+<lastmod>2020-07-24T00:00:00-04:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/categories</loc>
 </url>
 <url>
@@ -94,6 +98,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/category/products/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/productivity/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/page2/</loc>

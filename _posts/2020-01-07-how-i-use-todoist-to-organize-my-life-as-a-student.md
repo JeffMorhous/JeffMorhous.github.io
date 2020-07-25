@@ -4,8 +4,8 @@ title:  "How I Use Todoist To Organize My Life As A Student"
 author: jeff
 categories: [ College ]
 image: assets/images/todoist-article.jpeg
-featured: true
-hidden: true
+featured: false
+hidden: false
 ---
 
 ## Why Should I Care?
