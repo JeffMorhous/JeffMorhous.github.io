@@ -86,3 +86,6 @@ Now that you have Vuetify hooked up to Vue, adding crazy complex and appealing c
 [The Vuetify Website and Docs](https://vuetifyjs.com/en/)
 
 [Git-it Tutorial](http://jlord.us/git-it/)
+
+---------
+<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>

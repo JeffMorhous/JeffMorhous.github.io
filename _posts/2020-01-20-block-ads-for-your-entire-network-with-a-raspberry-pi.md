@@ -105,3 +105,6 @@ A DNS sinkhole acts in place of your usual DNS provider to provide false results
 So you visit a website and it loads. Next, the website asks its ad provider for ads, and Pi-hole says “What ad provider? That doesn’t exist.” And boom your ads are gone. This can actually speed up your network, as you won’t be using as much bandwidth.
 
 An interesting note is that Pi-hole won’t kill youtube ads, as youtube serves its content and advertisements from the same DNS, so killing youtube ads would also kill youtube.
+
+----------
+<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>

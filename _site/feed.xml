@@ -5,8 +5,8 @@
     <description>Software Engineer Specializing in iOS. I write about programming, productivity, and occasionally tech.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Sep 2020 22:09:55 -0400</pubDate>
-    <lastBuildDate>Thu, 17 Sep 2020 22:09:55 -0400</lastBuildDate>
+    <pubDate>Mon, 19 Oct 2020 13:34:45 -0400</pubDate>
+    <lastBuildDate>Mon, 19 Oct 2020 13:34:45 -0400</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -52,10 +52,7 @@
 &lt;p&gt;The iPad Pro definitely deserves it’s “Pro” name, even if it’s not obvious at first glance. All of these subtle improvements over the base model really pull together for a best-in-class experience. I definitely won’t tell you which iPad to buy, but I’m super happy with the Pro 😉&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;If you’ve enjoyed this article, I’d love to hear from you! Likewise, you may like to hear from me. Throw your email my way, and I’ll (occasionally) send my writing about programming, productivity, and tech your way.&lt;/p&gt;
-
-&lt;iframe scrolling=&quot;no&quot; style=&quot;width:100%!important;height:220px;border:1px #ccc solid !important&quot; src=&quot;https://buttondown.email/JeffMorhous?as_embed=true&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;iframe src=&quot;https://iosbynight.substack.com/embed&quot; width=&quot;100%&quot; height=&quot;320&quot; style=&quot;border:1px solid #EEE; background:white;&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Sun, 13 Sep 2020 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/switching-from-ipad-to-ipad-pro/</link>
@@ -108,10 +105,7 @@
 &lt;h4 id=&quot;brave-is-a-browser-that-feels-and-acts-a-lot-like-chrome-but-lets-you-step-outside-the-google-ecosystem-and-retake-control-over-some-of-your-digital-footprint&quot;&gt;Brave is a browser that feels and acts a lot like Chrome, but lets you step outside the Google ecosystem and retake control over some of your digital footprint.&lt;/h4&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;If you’ve enjoyed this article, I’d love to hear from you! Likewise, you may like to hear from me. Throw your email my way, and I’ll (occasionally) send my writing about programming, productivity, and tech your way.&lt;/p&gt;
-
-&lt;iframe scrolling=&quot;no&quot; style=&quot;width:100%!important;height:220px;border:1px #ccc solid !important&quot; src=&quot;https://buttondown.email/JeffMorhous?as_embed=true&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;iframe src=&quot;https://iosbynight.substack.com/embed&quot; width=&quot;100%&quot; height=&quot;320&quot; style=&quot;border:1px solid #EEE; background:white;&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Wed, 05 Aug 2020 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/switching-to-the-brave-browser/</link>
@@ -209,11 +203,7 @@
 &lt;p&gt;Reading is a wonderfully relaxing and rewarding hobby that will push you towards success faster than any other.&lt;/p&gt;
 
 &lt;hr /&gt;
-
-&lt;p&gt;If you’ve enjoyed this article, I’d love to hear from you! Likewise, you may like to hear from me. Throw your email my way, and I’ll (occasionally) send my writing about programming, productivity, and tech your way.&lt;/p&gt;
-
-&lt;iframe scrolling=&quot;no&quot; style=&quot;width:100%!important;height:220px;border:1px #ccc solid !important&quot; src=&quot;https://buttondown.email/JeffMorhous?as_embed=true&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;iframe src=&quot;https://iosbynight.substack.com/embed&quot; width=&quot;100%&quot; height=&quot;320&quot; style=&quot;border:1px solid #EEE; background:white;&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;I won’t spam you, promise 🤝&lt;/p&gt;
 </description>
@@ -265,6 +255,9 @@ activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive
 &lt;hr /&gt;
 
 &lt;p&gt;This is such a small UI feature that has a huge benefit. If you implement it correctly, the people that use your app will probably never consciously notice it. But if you don’t implement this, users will likely feel like your app is slow, or mistake a normal wait time for a buggy freeze of the app. Hope you got some value out of this, I know your users will!&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;iframe src=&quot;https://iosbynight.substack.com/embed&quot; width=&quot;100%&quot; height=&quot;320&quot; style=&quot;border:1px solid #EEE; background:white;&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Tue, 14 Jul 2020 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/how-to-give-your-viewcontroller-an-activityindicator/</link>
@@ -352,6 +345,9 @@ activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;And that’s it! You have a custom textbox that kind of floats above the view you put it in.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;iframe src=&quot;https://iosbynight.substack.com/embed&quot; width=&quot;100%&quot; height=&quot;320&quot; style=&quot;border:1px solid #EEE; background:white;&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Fri, 15 May 2020 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/how-to-customize-uitextview/</link>
@@ -385,6 +381,9 @@ window?.rootViewController = ViewController()
 &lt;p&gt;Now, you can specify your actual layout in ViewController.swift!&lt;/p&gt;
 
 &lt;p&gt;You’re all set up to implement the design of your dreams programmatically, and  &lt;a href=&quot;https://softauthor.com/ios-ui-design-programmatically-xcode-9-swift-4&quot;&gt;here’s a quick reference to help you get the hang of it&lt;/a&gt;!&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;iframe src=&quot;https://iosbynight.substack.com/embed&quot; width=&quot;100%&quot; height=&quot;320&quot; style=&quot;border:1px solid #EEE; background:white;&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Mon, 13 Apr 2020 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/how-to-set-up-programmatic-interfaces-in-ios/</link>
@@ -414,6 +413,9 @@ window?.rootViewController = ViewController()
 &lt;p&gt;You may have to restart Xcode, but you should now be able to run your apps on your device without physically connecting it!&lt;/p&gt;
 
 &lt;p&gt;This is a pretty small trick but it may save you tons of time, and honestly it’s just too cool not to set up. Hope this helped, and if you ran in to trouble, let me know below!&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;iframe src=&quot;https://iosbynight.substack.com/embed&quot; width=&quot;100%&quot; height=&quot;320&quot; style=&quot;border:1px solid #EEE; background:white;&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Fri, 03 Apr 2020 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/how-to-wirelessly-test-your-app-on-your-iphone/</link>
@@ -465,6 +467,9 @@ window?.rootViewController = ViewController()
 &lt;hr /&gt;
 
 &lt;p&gt;Making the switch from Android to the iPhone was a lot like my jump from Windows to Mac. It took me years to work up the guts but I’m definitely not regretting it. Yes, Apple charges significantly more for products that compare equally on a technical level. The “Apple Tax” is very real, and a barrier for many. If you’re trying to decide if that price jump is worth it for you, talk to some friends, and ask them what they like about their iPhone! Go into the Apple store and get hands-on with them 👨‍🔬&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;iframe src=&quot;https://iosbynight.substack.com/embed&quot; width=&quot;100%&quot; height=&quot;320&quot; style=&quot;border:1px solid #EEE; background:white;&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Fri, 27 Mar 2020 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/switching-from-android-to-iphone/</link>
@@ -516,6 +521,9 @@ window?.rootViewController = ViewController()
 &lt;hr /&gt;
 
 &lt;p&gt;All of these tips not withstanding, remote work gives you the freedom to break these rules when needed. Use this wild pandemic to take advantage of the autonomy remote work offers. Who knows, you may discover that your top job desire is the opportunity for remote work.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;iframe src=&quot;https://iosbynight.substack.com/embed&quot; width=&quot;100%&quot; height=&quot;320&quot; style=&quot;border:1px solid #EEE; background:white;&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Mon, 16 Mar 2020 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/how-to-handle-college-at-home/</link>
@@ -578,6 +586,9 @@ window?.rootViewController = ViewController()
   &lt;p&gt;“Success is stumbling from failure to failure with no loss of enthusiasm.”&lt;br /&gt;
 ―  &lt;strong&gt;Winston S. Churchill&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;iframe src=&quot;https://iosbynight.substack.com/embed&quot; width=&quot;100%&quot; height=&quot;320&quot; style=&quot;border:1px solid #EEE; background:white;&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Thu, 27 Feb 2020 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/how-i-bombed-a-microsoft-interview/</link>

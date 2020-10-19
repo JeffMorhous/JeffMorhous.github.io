@@ -75,3 +75,6 @@ Ultimately, I turned down that final round interview because by that point, I ha
 In all honesty, there’s no telling how I would have performed on that final interview! Because I didn’t follow through on the last stage of the interview, I won’t speak too much to it. I hear they typically ask one or two questions similar to the ones you saw in the second assessment. The biggest difference is that you’ll want to explain your design decisions to the interview to show an understanding of programming principals, rather than just cranking out code.
 
 Remember that the person you speak with  _wants_ to see you succeed, so don’t be intimidated. Ask lots of questions and don’t be afraid to say when you don’t know something!
+
+-----------
+<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>

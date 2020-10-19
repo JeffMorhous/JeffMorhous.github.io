@@ -24,3 +24,6 @@ Next, add the following to your SceneDelegate.swift
 Now, you can specify your actual layout in ViewController.swift!
 
 You’re all set up to implement the design of your dreams programmatically, and  [here’s a quick reference to help you get the hang of it](https://softauthor.com/ios-ui-design-programmatically-xcode-9-swift-4)!
+
+----------
+<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>

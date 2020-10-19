@@ -47,3 +47,6 @@ It’s easy to just lounge around in pajamas all day, and that’s totally fine.
 ----------
 
 All of these tips not withstanding, remote work gives you the freedom to break these rules when needed. Use this wild pandemic to take advantage of the autonomy remote work offers. Who knows, you may discover that your top job desire is the opportunity for remote work.
+
+----------
+<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>

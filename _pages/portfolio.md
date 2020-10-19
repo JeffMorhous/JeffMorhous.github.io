@@ -13,7 +13,7 @@ comments: true
   <hr>
 
   <h4>What Are The Odds</h4>
-  <p>Simple game where one person dares another to do a ridiculous task. The app adds to the fun by truly randomly generating the numbers, eliminating cheating. <a target="_blank" href="https://play.google.com/store/apps/details?id=feature.a.its.bug.a.not.its.whataretheodds">Android App</a> in December 2018 and <a target="_blank" href="https://apps.apple.com/us/app/your-odds-are/id1513459332">iOS App</a> in May 2020.</p>
+  <p>Simple game where one person dares another to do a ridiculous task. The app adds to the fun by truly randomly generating the numbers, eliminating cheating. <a target="_blank" href="https://play.google.com/store/apps/details?id=feature.a.its.bug.a.not.its.whataretheodds">Android App</a> in December 2018 and <a target="_blank" href="https://apps.apple.com/us/app/your-odds-are/id1513459332">iOS App</a> in May 2020. <a target="_blank" href="https://github.com/JeffMorhous/What-Are-The-Odds-iOS">🤯 View code and demo on github 🤯</a></p>
   <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/all-3-dark.png" alt="what are the odds promo image"/></p>
   <hr>
 

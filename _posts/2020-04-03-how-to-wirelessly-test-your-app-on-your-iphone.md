@@ -25,3 +25,6 @@ Go ahead and click the checkbox that says “_Connect via network_” and voila!
 You may have to restart Xcode, but you should now be able to run your apps on your device without physically connecting it!
 
 This is a pretty small trick but it may save you tons of time, and honestly it’s just too cool not to set up. Hope this helped, and if you ran in to trouble, let me know below!
+
+-----------
+<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>

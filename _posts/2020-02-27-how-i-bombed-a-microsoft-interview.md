@@ -48,3 +48,6 @@ Honestly, I probably wouldn’t have hired me after that call either. But this a
 
 > “Success is stumbling from failure to failure with no loss of enthusiasm.”  
 > ―  **Winston S. Churchill**
+
+----------
+<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>

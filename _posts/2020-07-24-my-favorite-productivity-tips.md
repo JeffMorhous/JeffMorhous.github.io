@@ -89,13 +89,6 @@ Plenty of successful people make reading a priority in their life. Warren Buffet
 Reading is a wonderfully relaxing and rewarding hobby that will push you towards success faster than any other.
 
 ----------
-
-If you’ve enjoyed this article, I’d love to hear from you! Likewise, you may like to hear from me. Throw your email my way, and I’ll (occasionally) send my writing about programming, productivity, and tech your way.
-
-<iframe
-scrolling="no"
-style="width:100%!important;height:220px;border:1px #ccc solid !important"
-src="https://buttondown.email/JeffMorhous?as_embed=true"
-></iframe><br /><br />
+<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 I won’t spam you, promise 🤝

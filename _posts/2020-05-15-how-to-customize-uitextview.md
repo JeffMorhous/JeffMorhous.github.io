@@ -61,3 +61,6 @@ Your method for doing this will definitely vary, but I used
         NSLayoutConstraint.activate([insert your array of constraints here])
 
 And that’s it! You have a custom textbox that kind of floats above the view you put it in.
+
+------------
+<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
