@@ -8,17 +8,22 @@ comments: true
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
   <h4>MockMyWords</h4>
-  <p>Seen that meme of everyone's favorite cartoon character mOcKing wItH soMe aLteRnaTinG teXt? I turned it into an <a target="_blank" href="https://play.google.com/store/apps/details?id=morhous.jeffery.mockmywords">Android App</a> in March 2019 and an <a target="_blank" href="https://apps.apple.com/us/app/mock-my-words/id1513453089">iOS App</a> in May 2020!</p>
+  <p>Seen that meme of everyone's favorite cartoon character mOcKing wItH soMe aLteRnaTinG teXt? I turned it into an <a target="_blank" href="https://play.google.com/store/apps/details?id=morhous.jeffery.mockmywords">Android App</a> in March 2019 and an <a target="_blank" href="https://apps.apple.com/us/app/mock-my-words/id1513453089">iOS App</a> in May 2020! Created with <b>Swift and UIKit</b></p>
   <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/All-3-Light.png" alt="mockmywords promo image"/></p>
   <hr>
 
   <h4>What Are The Odds</h4>
-  <p>Simple game where one person dares another to do a ridiculous task. The app adds to the fun by truly randomly generating the numbers, eliminating cheating. <a target="_blank" href="https://play.google.com/store/apps/details?id=feature.a.its.bug.a.not.its.whataretheodds">Android App</a> in December 2018 and <a target="_blank" href="https://apps.apple.com/us/app/your-odds-are/id1513459332">iOS App</a> in May 2020. <a target="_blank" href="https://github.com/JeffMorhous/What-Are-The-Odds-iOS">🤯 View code and demo on github 🤯</a></p>
+  <p>Simple game where one person dares another to do a ridiculous task. The app adds to the fun by truly randomly generating the numbers, eliminating cheating. <a target="_blank" href="https://play.google.com/store/apps/details?id=feature.a.its.bug.a.not.its.whataretheodds">Android App</a> in December 2018 and <a target="_blank" href="https://apps.apple.com/us/app/your-odds-are/id1513459332">iOS App</a> in May 2020.  Created with <b>Swift and UIKit</b> <a target="_blank" href="https://github.com/JeffMorhous/What-Are-The-Odds-iOS">🤯 View code and demo on github 🤯</a></p>
   <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/all-3-dark.png" alt="what are the odds promo image"/></p>
   <hr>
 
+  <h4>Hiring Portal</h4>
+  <p>Final group project for CSE3901 (Web Development) at Ohio State. Used <b>Ruby on Rails</b> to create a hiring portal that allowed students to create an account, select their availablilty, and apply to grade a given class. Instructors could recommend students and rate previous graders. Lastly, the app scraped class schedule data from OSU's website and let an admin assign graders to classes. Collaborated with teammates over <b>git</b> and <b>deployed to Heroku</b>.<a href="https://github.com/JeffMorhous/Fig-Neutrons/tree/master/hiring-graders"> Source code here</a> and live app <a href="https://secret-plains-27771.herokuapp.com/">here</a>. Completed in April 2020!</p>
+  <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/csewebdev.png" alt="CSE project promo image"/></p>
+  <hr>
+
   <h4>Jack The Resume Ripper</h4>
-  <p>ACollaborated on a team of 3 for OSU's 2019 Hackathon to create a web app leveraging Vue.js, AWS Lambda, and Azure Cognitive Services to parse insights out of resumes. Focused on Front-End Design. <a target="_blank" href="https://www.youtube.com/watch?v=vfvaiR9Y6nI">You can see a demo here</a>.</p>
+  <p>ACollaborated on a team of 3 for OSU's 2019 Hackathon to create a web app leveraging <b>Vue.js, AWS Lambda, and Azure Cognitive Services</b> to parse insights out of resumes. Focused on Front-End Design. <a target="_blank" href="https://www.youtube.com/watch?v=vfvaiR9Y6nI">You can see a demo here</a>.</p>
   <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/JackDemo.png" alt="mockmywords promo image"/></p>
   <hr>
 

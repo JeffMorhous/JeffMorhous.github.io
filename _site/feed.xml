@@ -5,9 +5,53 @@
     <description>Software Engineer Specializing in iOS. I write about programming, productivity, and occasionally tech.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Oct 2020 13:34:45 -0400</pubDate>
-    <lastBuildDate>Mon, 19 Oct 2020 13:34:45 -0400</lastBuildDate>
+    <pubDate>Sun, 29 Nov 2020 19:17:44 -0500</pubDate>
+    <lastBuildDate>Sun, 29 Nov 2020 19:17:44 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Why You Can't Focus</title>
+        <description>&lt;p&gt;Being able to devote your full attention to something is fundamental to thriving in any area of life, so why is it so hard?&lt;/p&gt;
+
+&lt;p&gt;In Cal Newport’s cult-favorite “Deep Work”, he says&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The ability to perform deep work is becoming increasingly rare at exactly the same time it is becoming increasingly valuable in our economy. As a consequence, the few who cultivate this skill, and then make it the core of their working life, will thrive.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For the most part, “Deep Work” is putting all of our energy into one task, to accomplish something that can’t easily be replicated. Think of the last time you had to write a term paper, study for a math exam, or complete a deliverable at work. If you’re anything like me, you probably remember the constant negotiation with yourself to actually work on the task at hand. I often find myself wanting to reach for my phone, grab a snack, water my succulent, honestly anything but what I’ve set out to do. Of course, guilt quickly follows. Does that make me a bad person/student/programmer?&lt;/p&gt;
+
+&lt;p&gt;No. &lt;strong&gt;Everyone experiences resistance to mentally or physically taxing labor to some extent.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;novel-stimuli&quot;&gt;Novel stimuli&lt;/h2&gt;
+
+&lt;p&gt;The human brain is wired to  &lt;strong&gt;seek out novel stimuli&lt;/strong&gt;. It’s simply how we’ve stayed alive for so long. When a deer runs into the road while we’re driving, our attention instantly shifts to it, prompting us to act to avoid the danger. That same instinctual response to new and interesting things in our surroundings is what makes it so hard to get focused work done.&lt;/p&gt;
+
+&lt;p&gt;Your mind is always on the lookout for something more interesting than what it’s currently honed in on. The same thing that keeps you alive is to blame for  &lt;em&gt;most&lt;/em&gt;  all procrastination.&lt;/p&gt;
+
+&lt;h2 id=&quot;overcoming-it&quot;&gt;Overcoming It&lt;/h2&gt;
+
+&lt;p&gt;There’s a careful balance necessary between work that is too boring and work that is too hard. If you can convince yourself that you’re interested in something, and work enough to understand it, all that’s left to do is devote your attention to it.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, there’s lots of things we can do to get into a flow state of hyper-focused attention easier. For me, it’s all about routine. When I set out to do truly deep work, I like to sit down with a drink (pop, tea, coffee, etc), put on some headphones, and get to work. I try not to sit at a desk with music and tea unless I’m doing work, so when I start that routine my mind already knows what’s about to happen.&lt;/p&gt;
+
+&lt;p&gt;As with any skill,  &lt;strong&gt;practice works wonders&lt;/strong&gt;. 
+Think of the time you spend focusing as an investment in any future time you need to focus. Each time it get’s a little easier to fight off distractions for just a little longer.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;This post was originally sent out on my newsletter, iOS By Night. If you want to see stuff like this when it first comes out, be sure to subscribe there!&lt;/p&gt;
+&lt;iframe src=&quot;https://iosbynight.substack.com/embed&quot; width=&quot;100%&quot; height=&quot;320&quot; style=&quot;border:1px solid #EEE; background:white;&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Sun, 18 Oct 2020 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/why-you-cant-focus/</link>
+        <guid isPermaLink="true">http://localhost:4000/why-you-cant-focus/</guid>
+        
+        
+        <category>Productivity</category>
+        
+        <category>College</category>
+        
+      </item>
     
       <item>
         <title>Switching From iPad to iPad Pro</title>
@@ -529,73 +573,6 @@ window?.rootViewController = ViewController()
         <link>http://localhost:4000/how-to-handle-college-at-home/</link>
         <guid isPermaLink="true">http://localhost:4000/how-to-handle-college-at-home/</guid>
         
-        
-        <category>College</category>
-        
-      </item>
-    
-      <item>
-        <title>How I Bombed a Microsoft Interview</title>
-        <description>&lt;p&gt;So I’ve actually interviewed with Microsoft a couple of times. The first time I interviewed for a Software Engineering Internship, it was with a Microsoft engineer on my college campus. It was a great time, super challenging, and also terrifying. We talked very technically — it was your classic whiteboard interview.&lt;/p&gt;
-
-&lt;p&gt;I was handed a piece of blank paper and asked to write code that performed a specific operation (can’t go into too much detail 🤫) on a binary search tree. The question was well beyond my skillset at the time, and I felt like I was drowning in sweat. After talking with the interview to clarify constraints, I walked him through the problem in several example graphs. This helped me approach my algorithmic solution, which I wrapped up with just minutes to spare. I was told that my feedback could be used for up to a year, so when recruiting opened up for the year, I would likely be pushed on to the next round (which for Microsoft, I believe is an on-site).&lt;/p&gt;
-
-&lt;p&gt;Over the next several months, I studied like it was my job to ensure I wouldn’t be sweating through my shirt when I got the opportunity to interview again. I spent quality time with everyone’s favorite resources — Cracking The Coding Interview and Leetcode. I spent all of my preparation time preparing for questions like the one I had received that initial interview.&lt;/p&gt;
-
-&lt;h2 id=&quot;but-then-my-recruiter-left-microsoft-&quot;&gt;&lt;strong&gt;But then my recruiter left Microsoft 😬&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;I was told by the new area recruiter that I’d have to submit my application and begin again. YIKES. Although I was bummed, it wasn’t the end of the world, and I applied again! I actually went a month or two without a reply, until I got ahold of someone internally who gave the new recruiter for my area a nudge. No hate on these recruiters though, their job is very challenging and I don’t envy the sheer amount of candidates they’re responsible for. Anyways, I was eventually contacted to schedule an initial phone screen!&lt;/p&gt;
-
-&lt;p&gt;I prepared for this just like I had been all summer, leetcoding like it was my job. So you may not be surprised that this phone screen was not at all what I was expecting.&lt;/p&gt;
-
-&lt;p&gt;The phone screen was  &lt;em&gt;not very technical.&lt;/em&gt;  It seemed like an initial get-to-know-you style call, to see if I was a real human being who could hold a conversation.  &lt;em&gt;Usually&lt;/em&gt;, I’m alright at that. But I was so caught off guard by the contrast of this to my first interview that  &lt;strong&gt;I choked, and I choked hard&lt;/strong&gt;. During that phone call, I was not a real human being who could hold a conversation.&lt;/p&gt;
-
-&lt;p&gt;Almost immediately, he asked me the first question,&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Why do you want to work at Microsoft?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Wait, my last interview didn’t care what I thought about Microsoft??? He just wanted to see how comfortable I was with data structures! I wasn’t even kind of ready! This question is so fundamental to a job interview, I’m embarresed just thinking about how I struggled to respond.&lt;/p&gt;
-
-&lt;p&gt;Yes, I  &lt;em&gt;thought&lt;/em&gt;  I wanted to work at Microsoft, but at that time, I couldn’t articulate why. Then next question came —&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;What’s your favorite Microsoft product, and what would you change about it?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I was sweating. I switched to Mac a few years ago, how did he know? 😩Thankfully I remembered that my IDE of choice, VS Code, is a Microsoft product! I love it and happily described how perfect it was. So needless to say I wasn’t prepared for him to ask “what I wanted to change about VS Code”. Change? I loved it!&lt;/p&gt;
-
-&lt;p&gt;At this point I was really hoping that he would throw me a question that would allow me to show off my practiced binary tree knowledge. But yet again, another curveball was thrown my way.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Tell me about a project where you used a data structure and algorithm&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;😩 I’ve done plenty of  &lt;em&gt;simple&lt;/em&gt; personal projects and plenty interview-style questions involving data structures and algorithms — but it immediately dawned on me that I never combined these two. My theoretical knowledge of algorithmic concepts was definitely siloed into the domain of interviewing. I struggled to describe how I used basic array sorts to populate iOS tableviews, and this definitely didn’t thrill my interviewer.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;The biggest mistake I made in this whole process&lt;/strong&gt;  was making a blanket assumption my “phone screen” would be exactly like my previous interview that Spring. I wasn’t prepared for a question as straightforward as “Why do you want to work here”!&lt;/p&gt;
-
-&lt;p&gt;I didn’t over-prepare, I prepared for the wrong thing entirely. I assumed that I only had 1 area to improve in, and was proven sorely wrong.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Honestly, I probably wouldn’t have hired me after that call either. But this article isn’t a pity party for myself. It’s a reflection of what caused me to present myself so poorly. Yes, I failed this interview (with flying colors 🙃). But you can be assured that I won’t make that mistake again. Never again will I sit down for an interview (or even an info meeting) without internalizing my thoughts about the company and how I would contribute.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Success is stumbling from failure to failure with no loss of enthusiasm.”&lt;br /&gt;
-―  &lt;strong&gt;Winston S. Churchill&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-&lt;iframe src=&quot;https://iosbynight.substack.com/embed&quot; width=&quot;100%&quot; height=&quot;320&quot; style=&quot;border:1px solid #EEE; background:white;&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
-</description>
-        <pubDate>Thu, 27 Feb 2020 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/how-i-bombed-a-microsoft-interview/</link>
-        <guid isPermaLink="true">http://localhost:4000/how-i-bombed-a-microsoft-interview/</guid>
-        
-        
-        <category>Tutorial</category>
         
         <category>College</category>
         
