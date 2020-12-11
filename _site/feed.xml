@@ -5,9 +5,111 @@
     <description>Software Engineer Specializing in iOS. I write about programming, productivity, and occasionally tech.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Nov 2020 19:17:44 -0500</pubDate>
-    <lastBuildDate>Sun, 29 Nov 2020 19:17:44 -0500</lastBuildDate>
+    <pubDate>Fri, 11 Dec 2020 16:27:29 -0500</pubDate>
+    <lastBuildDate>Fri, 11 Dec 2020 16:27:29 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Interview With a Self-Taught iOS Developer</title>
+        <description>&lt;p&gt;Here’s the tweet that I’d been waiting for since I started following Frank back in April.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;BIG NEWS!!!: After 2 years of self study, 5 months of unemployment, a global pandemic, having 3 kids (two are twins!), 100+ applications and countless interviews I can finally say I’ve accepted my first job as a Mobile Software Engineer!!!! 🎉🥳 I FREAKING DID IT!!!! 🙌&lt;/p&gt;&amp;mdash; Frank Foster | #BlackLivesMatter (@frankefoster) &lt;a href=&quot;https://twitter.com/frankefoster/status/1302313561696301057?ref_src=twsrc%5Etfw&quot;&gt;September 5, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Frank comes from an IT background, and landed an iOS development job in the middle of 2020. Heck of a year for a career change. About a month ago, he agreed to sit down with me and talk about his journey to becoming a Mobile Software Engineer, and his story is definitely worth sharing.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What was the beginning of your career like? How did you break into tech without a degree?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I actually, funny enough, used to work at Apple. I was a genius at one of the Apple stores. I worked there for about 6 years, starting at sales and working my way up to genius, which is pretty much everything. Towards the end of my time there, I said “You know what, I need a change of pace, I’m going to start coding.” I poked around, initially looking at game development. I started off with all the worst preconceptions of how great I was gonna be, and found out very quickly — “Oh no, this is not easy.” It was super hard. I ended up switching to an IT job, and did that for about two years.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I came across an opportunity from University of Idaho — they had partnered with Apple to offer free coding classes to the community, and they were looking for someone to run it. So I figured, “What better way to learn than by teaching!” That was in 2018, and I eventually left my IT job, and went to a better IT job at a pretty mature startup.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Shortly into the work-from-home stuff, the company I was working at was hit with layoffs. At this point, I’d been doing this teaching coding thing for a few years. I figured I either go back to another IT job, which I won’t enjoy, or I can jump into iOS development.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;So how did your job search start?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I had a few apps under my belt, but I still took a few months to study, work on my own apps, and work on my twitter, LinkedIn, and Resume. There’s definitely an element of being known, creating some legitimacy.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;How does Twitter fit into your story?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Twitter went from this thing where I knew I had to do it for my career, to genuinely enjoying the community. That’s how I met you, and that’s how I met a number of people — I’ve even been to a couple twitter dev meetups!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;When did you start applying for a new job?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I probably started kicking off my applications about two months after I was laid off. I applied at probably 80–90 companies. My daily routine was just get up, go to LinkedIn and Indeed, and just apply constantly. I had 4 0r 5 interviews, and 3 of them I had a second round with. (Writers note, this is an awesome interview success rate. Frank rocks at interviewing)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I really connected with the company I’m with now. Of all the opportunities I could have taken, I’m sure this is the best. There’s a ton of opportunity for me to grow.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;How did you get started learning?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I started with Apple’s “Everyone can Code” free materials, which is what Inspire Idaho was using as a curriculum. It kind of gave the ground level, and my class expanded on that to build out real apps. It’s important to pick something that you want to build, even if it’s super basic. Something like a button that changes a color can teach you a lot. I definitely tapped into Hacking With Swift, 100 Days of Swift, and everything that Paul Hudson has done. Building an app is really important. Realizing, I want to do ‘this’&lt;strong&gt;,&lt;/strong&gt; and then seeking out the resources and gaining the necessary knowledge to build it. I couldn’t list every tutorial I followed, or every Medium/Reddit/Blog/Stack Overflow post I read.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;How are you continuing to build on your foundation of knowledge?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Oh my gosh, dude, it’s a daily thing. One of the challenges I’m facing right now is learning dependency injection, and doing that on a deadline is a bit stressful. I’m on a small team, and my coworkers are amazing. My teammate has been taking time to bring me up to speed, but there’s still a lot I don’t know. You kind of have to take it as a learning opportunity, write down things to remember, and try to use new knowledge to solidify it. I might go a little bit slower than a coworker, but all the work I do gives me a building block to keep going. When you find the right company, you’re not less of an employee for having gaps in knowledge. Having open sourced projects on Github helps set expectations for companies going in too!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;What’s the best part of being an iOS Developer?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;There’s a lot of great things! For most of my career, I’ve been in a customer-service type position, where I do things for customers. There’s only so many ways you can reset a password or replace a hard drive. You go from that, to being &lt;strong&gt;creative&lt;/strong&gt; with things. It definitely brings a new perspective, combining logic and design. We don’t have a UX Designer, so we get to build both sides of our app. I’m also a homebody, so being remote is fantastic!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaking of — how has remote work been for you?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I was actually kind of remote before this, I was pretty much the only IT person at my company’s site. I was in an office, but all my meetings and whatnot were on video call, so moving to completely at home has been no problem at all. I like being at home, I’m lucky enough to have a space that can be my office. I think it’s great — I like the fact that there isn’t someone on top of you cracking the whip, since I’ve had that kind of job before. Especially with coding, I think the isolation helps. To be able to put on some headphones and just focus is great. I’ve actually been thinking about buying some more pairs of sweatpants.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;What drew you to iOS over any other kind of development? Would you make the same decision if you could go back?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The big thing that drew me to it is that I’m a huge Apple fan. For all of their flaws, their philosophy of technology is what draws me to using it. In a very weird way, I started college for a music degree, and the Mac was the place to be in that scene. I was homeschooled, and my mom put a lot of schooling me. She was an artist, and that left a huge impact on me. Apples intersection of art and technology is super evident. If I could go back, I think I could do it again. There’s all sorts of products and technologies that you could learn, like game development, or the web, but I think for now iOS is the place to be.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;How do you feel about cross-platform stuff, like React Native? Would you ever switch into that?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I don’t have a huge opinion because I haven’t used it enough. But I definitely believe in using the best technology for the job at hand. Knowing the hatred of React Native in a lot of the community, I do think that native code is better. You’re able to follow guidelines for that platform much closer, and your development time often ends up being faster anyways. Being as native as possible often gives the best experience for users, but it still depends on what you’re doing.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I hope you enjoyed reading about Frank’s story as much as I did writing it up for you. Thanks, Frank, for letting me talk about your story! You can &lt;a href=&quot;https://twitter.com/frankefoster&quot;&gt;find Frank on twitter&lt;/a&gt;, where he is an active member of the thriving tech community.&lt;/p&gt;
+
+&lt;p&gt;You can also &lt;a href=&quot;https://twitter.com/JeffMorhous&quot;&gt;find me on twitter&lt;/a&gt;, or follow me here. If you want to be notified when I write something else, you can &lt;a href=&quot;https://iosbynight.substack.com/&quot;&gt;join my newsletter&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 11 Dec 2020 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/interview-with-a-self-taught-ios-developer/</link>
+        <guid isPermaLink="true">http://localhost:4000/interview-with-a-self-taught-ios-developer/</guid>
+        
+        
+        <category>Interview</category>
+        
+      </item>
     
       <item>
         <title>Why You Can't Focus</title>
@@ -521,60 +623,6 @@ window?.rootViewController = ViewController()
         
         
         <category>Products</category>
-        
-      </item>
-    
-      <item>
-        <title>How To Handle College at Home</title>
-        <description>&lt;p&gt;Are you one of the tens of thousands of college students who’ve been displaced recently? Lots of people are talking, writing, and reading about their transmission to  &lt;em&gt;remote work&lt;/em&gt;, but not much has been said about  &lt;em&gt;remote learning.&lt;/em&gt; A lot of the same concepts apply, but a lot differs! I was actually homeschooled for 12 years, which involved some online classes, and a lot of self-direction. In college, I’ve already taken a few online classes. Even my job has been remote for quite some time, and now (like you, I’m assuming) I’m forced to finish out my entire academic semester online as well.&lt;/p&gt;
-
-&lt;p&gt;I’m not super worried about the transition, solely because it doesn’t change my lifestyle all too much. There’s still some adjustment, mostly being back home and coordinating with my parents, one of which is also WFH (working from home) in this tense time. Being left to your own devices AND being locked in your house requires a ton of self-discipline, and can definitely get to you really fast. Everyone is different, but there are some things that I know help me to be as productive and healthy as I can when working remotely. Here are some tips that I hope help you be as successful as you can. Build strong habits early, and you’ll be thanking yourself when online exams roll around the corner 🥴&lt;/p&gt;
-
-&lt;h1 id=&quot;recognize-the-situation&quot;&gt;Recognize the situation&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/2190/1*ex2Pfy4eGyvrhiaOqEEQ4Q.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;There’s no doubt the world is hurting right now. You’re not alone. People everywhere are having their lives turned upside down. Remember, the world is not ending, but the steps we’re taking are indeed stopping it from ending.&lt;/p&gt;
-
-&lt;p&gt;We’ve all had the rug pulled out from under us. Your professors and peers are all in the same boat as you. We didn’t sign up for this (well some did, but if you signed up for online classes to begin with you probably could write this article). Be patient with your faculty as they work to deliver you the education that you paid for. Be patient with yourself — it would be really unusual to be at your peak productivity during a time of worldwide crisis.&lt;/p&gt;
-
-&lt;h1 id=&quot;create-a-space-for-school&quot;&gt;Create a space for school&lt;/h1&gt;
-
-&lt;p&gt;Sure, watching lectures in bed and studying on the couch is sick and all(no pun intended), but it’s going to lead to devastating productivity losses. Some people can thrive wherever, but as we spend more and more time in our homes &lt;em&gt;a-la quarantine,&lt;/em&gt; it becomes increasingly important to remind your mind where work does and doesn’t happen. I work best in a closed room with a clean desk and an nice chair. But that’s not going to be possible for everyone all the time. Not everyone has a desk, I’m posted up at my parents kitchen table 👌. Just try your best to dedicate some physical space to your education, as it will certainly help you dedicate some mental space. Music and headphones are your friends for isolation, as it will help your drown out others sharing your school space.&lt;/p&gt;
-
-&lt;h1 id=&quot;create-a-time-for-school&quot;&gt;Create a time for school&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1212/1*umY_kJeLIXFkxDttK5iwyw.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This isn’t “spring break forever,” though it still feels like that. It’s really important that you dedicate time during your day to “lectures” in whatever form they’ll take, in addition to the obligatory studying and homework. Turn off your phone, shut the door if you can!&lt;/p&gt;
-
-&lt;p&gt;Dedicating time to school will help you strike a healthy work-life balance. There’s no such thing as just leaving the tv on ‘in the background’ while you do practice exams. If you put your focus on school during the time you promised yourself you’d be doing it, your free time will be yours to spend entirely.&lt;/p&gt;
-
-&lt;h1 id=&quot;use-a-planner&quot;&gt;Use a planner&lt;/h1&gt;
-
-&lt;p&gt;Keeping track of online classes is stupid hard. Professors may or may not remind you of things that are due, and it’s certainly not their responsibility to keep you organized. Write everything down and prioritize your days. A lot of people find it easiest to do this digitally — I use Todoist,  &lt;a href=&quot;https://medium.com/swlh/how-i-use-todoist-to-organize-my-life-as-a-student-8c95d5597a1d?source=friends_link&amp;amp;sk=5cdc006415567f1db52f83684016fe1a&quot;&gt;and I already wrote a piece about how it helps me stay organized.&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;communicate-with-your-family&quot;&gt;Communicate with your family&lt;/h1&gt;
-
-&lt;p&gt;If you’re at home for the long haul like me, this is going to take some adjusting for everyone. Be clear with them that you need undisturbed time to dedicate to your studies in order to succeed. It’s crazy hard to get deep work done if you’re constantly being interrupted, even if the interruptions are important. If you attention is absolutely need during your school time, help you family understand how to get that message across while still respecting your headspace.&lt;/p&gt;
-
-&lt;h1 id=&quot;get-dressed&quot;&gt;Get Dressed&lt;/h1&gt;
-
-&lt;p&gt;It’s easy to just lounge around in pajamas all day, and that’s totally fine. However, if you get up and get ready for the day like you were going to be out and about, it helps remind your mind that this isn’t a snow day. Hygiene and lifestyle habits will do wonders for your mental health!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;All of these tips not withstanding, remote work gives you the freedom to break these rules when needed. Use this wild pandemic to take advantage of the autonomy remote work offers. Who knows, you may discover that your top job desire is the opportunity for remote work.&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;iframe src=&quot;https://iosbynight.substack.com/embed&quot; width=&quot;100%&quot; height=&quot;320&quot; style=&quot;border:1px solid #EEE; background:white;&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
-</description>
-        <pubDate>Mon, 16 Mar 2020 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/how-to-handle-college-at-home/</link>
-        <guid isPermaLink="true">http://localhost:4000/how-to-handle-college-at-home/</guid>
-        
-        
-        <category>College</category>
         
       </item>
     
