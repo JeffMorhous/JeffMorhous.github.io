@@ -3,7 +3,7 @@ layout: post
 title:  "Interview With a Self-Taught iOS Developer"
 author: jeff
 categories: [ Interview]
-image: assets/images/pandemic.jpeg
+image: assets/images/frank.jpg
 featured: false
 hidden: false
 ---
