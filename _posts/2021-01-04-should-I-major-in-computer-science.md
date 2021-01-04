@@ -73,7 +73,7 @@ It happens to be a bit easier to land an entry level job in software when you ha
 
 I bet you came here looking for me to say “Yes you should major in CS”, or “No, you shouldn’t even go to college,” but I’m not going to do that. Sorry 🤷‍♂️
 
-Your career is an exceptionally personal journey, but it shouldn’t refine you. Figure out what’s important to you in work. Decide how you want your days to look. If that aligns with a job like Software Engineering, that’s great! It’s even better if some of your skills align with the job, like an aptitude for computers, programming experience, and analytical proficiency.
+Your career is an exceptionally personal journey, but it shouldn’t define you. Figure out what’s important to you in work. Decide how you want your days to look. If that aligns with a job like Software Engineering, that’s great! It’s even better if some of your skills align with the job, like an aptitude for computers, programming experience, and analytical proficiency.
 
 Tech jobs are in very high demand, meaning you’ll posses _rare and valuable skills_ that will often translate to job security and financial rewards.
 
