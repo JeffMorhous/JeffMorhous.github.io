@@ -2,7 +2,7 @@
 layout: post
 title:  "Buckeye Trek — Exploring Silicon Valley"
 author: jeff
-categories: [ Life ]
+categories: [ Life, College ]
 image: https://miro.medium.com/max/1400/1*affbJHZxGLHPvPM5rbnMxQ.jpeg
 ---
 

@@ -4,8 +4,8 @@ title:  "Block Ads for Your Entire Home Network with a Raspberry Pi"
 author: jeff
 categories: [ Tutorial, Project ]
 image: https://miro.medium.com/max/1400/0*TCrEJluo7rbs8Gh0
-featured: true
-hidden: true
+featured: false
+hidden: false
 ---
 
 I got a Raspberry Pi for my birthday last year and have been _suffering analysis paralysis_, trying to figure out what I want to do with it.
