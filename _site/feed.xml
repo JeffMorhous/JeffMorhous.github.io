@@ -5,8 +5,8 @@
     <description>Software Engineer Specializing in iOS. I write about programming, productivity, and occasionally tech.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 Jan 2021 11:42:49 -0500</pubDate>
-    <lastBuildDate>Fri, 15 Jan 2021 11:42:49 -0500</lastBuildDate>
+    <pubDate>Fri, 15 Jan 2021 11:49:38 -0500</pubDate>
+    <lastBuildDate>Fri, 15 Jan 2021 11:49:38 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -73,7 +73,9 @@ print(result)
 &lt;p&gt;This is a lot of code to just assign a string based on a number value. We can use the ternary operator to do this in just 2 lines — and you can see the example below 👇&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;let result = age &amp;gt; 21 ? 
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;let result = age &amp;gt; 21 ? &quot;Too young to drink 🍺&quot;&quot; : &quot;Old enough to drink 🍻&quot;
+print(result)
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;hr /&gt;

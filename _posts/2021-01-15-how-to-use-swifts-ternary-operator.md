@@ -55,7 +55,8 @@ print(result)
 This is a lot of code to just assign a string based on a number value. We can use the ternary operator to do this in just 2 lines — and you can see the example below 👇
 
 ```
-let result = age > 21 ? 
+let result = age > 21 ? "Too young to drink 🍺"" : "Old enough to drink 🍻"
+print(result)
 ```
 
 ----------
