@@ -5,9 +5,89 @@
     <description>Software Engineer Specializing in iOS. I write about programming, productivity, and occasionally tech.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 14 Jan 2021 23:34:34 -0500</pubDate>
-    <lastBuildDate>Thu, 14 Jan 2021 23:34:34 -0500</lastBuildDate>
+    <pubDate>Fri, 15 Jan 2021 11:42:49 -0500</pubDate>
+    <lastBuildDate>Fri, 15 Jan 2021 11:42:49 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>How To Use Swift’s Ternary Operator</title>
+        <description>&lt;p&gt;Ternary operators are beyond cool. They’re an easy way to do some if-else logic all on one line. Beyond that, they’re still easy to read and understand, so you don’t have to sacrifice readability for the ‘cool factor’ of using a language’s advanced features. In fact, it’s a great way to keep methods shorter and draw attention to other logic that may be more meaningful to your program.&lt;/p&gt;
+
+&lt;h3 id=&quot;start-with-an-if-else-statement&quot;&gt;Start With An If-Else Statement&lt;/h3&gt;
+
+&lt;p&gt;Take the below code for example. You compare two variables, and print something based on the result.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;if variable1 == variable2 {
+    print(&quot;Equality! 🥳&quot;)
+} else {
+    print(&quot;NO EQUALITY 🤬&quot;)
+}
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;convert-it-to-one-line&quot;&gt;Convert It To One Line&lt;/h3&gt;
+&lt;p&gt;The ternary operator consists of 3 parts.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;A conditional check&lt;/li&gt;
+  &lt;li&gt;The result of the operation if the conditional is true&lt;/li&gt;
+  &lt;li&gt;The result of the operation if the conditional is false&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For our above if-else statement, we could write it like this 👇&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;print(variable1 == variable2 ? &quot;Equality! 🥳&quot; : &quot;NO EQUALITY 🤬&quot;)
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;assigning-a-value&quot;&gt;Assigning A Value&lt;/h3&gt;
+
+&lt;p&gt;Ternary operations in Swift aren’t limited to just print statements. In fact, the ternary operator returns a value which can be used to set a variable.&lt;/p&gt;
+
+&lt;p&gt;You could take the below check for the age to drink alcohol&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;var result = “”
+
+if(age &amp;lt; 21){  
+  result = &quot;Too young to drink 🍺&quot;  
+} else {  
+  result = &quot;Old enough to drink 🍻&quot;  
+}
+
+print(result)
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is a lot of code to just assign a string based on a number value. We can use the ternary operator to do this in just 2 lines — and you can see the example below 👇&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;let result = age &amp;gt; 21 ? 
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;If you found this helpful, you might enjoy &lt;a href=&quot;https://gum.co/codeforhumans&quot;&gt;checking out my book on learning to program with Swift&lt;/a&gt;!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 Jan 2021 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/how-to-use-swifts-ternary-operator/</link>
+        <guid isPermaLink="true">http://localhost:4000/how-to-use-swifts-ternary-operator/</guid>
+        
+        
+        <category>Tutorial</category>
+        
+      </item>
     
       <item>
         <title>Should I Major in Computer Science?</title>
@@ -622,38 +702,6 @@ window?.rootViewController = ViewController()
         <pubDate>Mon, 13 Apr 2020 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/how-to-set-up-programmatic-interfaces-in-ios/</link>
         <guid isPermaLink="true">http://localhost:4000/how-to-set-up-programmatic-interfaces-in-ios/</guid>
-        
-        
-        <category>Tutorial</category>
-        
-      </item>
-    
-      <item>
-        <title>How to Wirelessly Test Your App on Your iPhone</title>
-        <description>&lt;p&gt;A good thing to note is that the mac you are using Xcode on and the iPhone (or iPad) you want to test on  &lt;strong&gt;must be on the same network&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Next to the build button, go to select a device/simulator. Here, mine just says “&lt;em&gt;Generic iOS Device&lt;/em&gt;”&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/2284/1*4iGsUqTlI2w8rJ5ILnOBOw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once you click on it, select “&lt;em&gt;Add Additional Simulators&lt;/em&gt;” The result will be a modal that looks like this.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/3204/1*f5VkFuTfSE0pNmhsdPXmAA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Go ahead and switch over to devices. Plug your device in and unlock it, and it should appear.&lt;/p&gt;
-
-&lt;p&gt;Go ahead and click the checkbox that says “&lt;em&gt;Connect via network&lt;/em&gt;” and voila!&lt;/p&gt;
-
-&lt;p&gt;You may have to restart Xcode, but you should now be able to run your apps on your device without physically connecting it!&lt;/p&gt;
-
-&lt;p&gt;This is a pretty small trick but it may save you tons of time, and honestly it’s just too cool not to set up. Hope this helped, and if you ran in to trouble, let me know below!&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;iframe src=&quot;https://iosbynight.substack.com/embed&quot; width=&quot;100%&quot; height=&quot;320&quot; style=&quot;border:1px solid #EEE; background:white;&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
-</description>
-        <pubDate>Fri, 03 Apr 2020 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/how-to-wirelessly-test-your-app-on-your-iphone/</link>
-        <guid isPermaLink="true">http://localhost:4000/how-to-wirelessly-test-your-app-on-your-iphone/</guid>
         
         
         <category>Tutorial</category>

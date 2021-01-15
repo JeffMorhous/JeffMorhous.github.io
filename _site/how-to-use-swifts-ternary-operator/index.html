@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/logo.png">
+
+<title>How To Use Swift’s Ternary Operator | Jeff Morhous</title>
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>How To Use Swift’s Ternary Operator | Jeff Morhous</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="How To Use Swift’s Ternary Operator" />
+<meta name="author" content="jeff" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Ternary operators are beyond cool. They’re an easy way to do some if-else logic all on one line. Beyond that, they’re still easy to read and understand, so you don’t have to sacrifice readability for the ‘cool factor’ of using a language’s advanced features. In fact, it’s a great way to keep methods shorter and draw attention to other logic that may be more meaningful to your program." />
+<meta property="og:description" content="Ternary operators are beyond cool. They’re an easy way to do some if-else logic all on one line. Beyond that, they’re still easy to read and understand, so you don’t have to sacrifice readability for the ‘cool factor’ of using a language’s advanced features. In fact, it’s a great way to keep methods shorter and draw attention to other logic that may be more meaningful to your program." />
+<link rel="canonical" href="http://localhost:4000/how-to-use-swifts-ternary-operator/" />
+<meta property="og:url" content="http://localhost:4000/how-to-use-swifts-ternary-operator/" />
+<meta property="og:site_name" content="Jeff Morhous" />
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1600/1*D3ujgVPO9LiSopCrQdCB2g.jpeg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-15T00:00:00-05:00" />
+<script type="application/ld+json">
+{"headline":"How To Use Swift’s Ternary Operator","dateModified":"2021-01-15T00:00:00-05:00","datePublished":"2021-01-15T00:00:00-05:00","image":"https://cdn-images-1.medium.com/max/1600/1*D3ujgVPO9LiSopCrQdCB2g.jpeg","author":{"@type":"Person","name":"jeff"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/how-to-use-swifts-ternary-operator/"},"description":"Ternary operators are beyond cool. They’re an easy way to do some if-else logic all on one line. Beyond that, they’re still easy to read and understand, so you don’t have to sacrifice readability for the ‘cool factor’ of using a language’s advanced features. In fact, it’s a great way to keep methods shorter and draw attention to other logic that may be more meaningful to your program.","url":"http://localhost:4000/how-to-use-swifts-ternary-operator/","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"jeff"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<link href="/assets/css/screen.css" rel="stylesheet">
+
+<link href="/assets/css/main.css" rel="stylesheet">
+
+<script src="/assets/js/jquery.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170783059-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-170783059-1');
+</script>
+
+</head>
+
+
+
+
+<body class="layout-post">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/">
+    <img src="/assets/images/logo.png" alt="Jeff Morhous">
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/index.html">Articles</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="/portfolio">Portfolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://gum.co/codeforhumans">Book</a>
+                </li>
+                
+                <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+<div class="container">
+
+<!-- Site Title
+================================================== -->
+<div class="mainheading">
+    <h1 class="sitetitle">Jeff Morhous</h1>
+    <p class="lead">
+        Software Engineer Specializing in iOS. I write about programming, productivity, and occasionally tech.
+    </p>
+</div>
+
+<!-- Content
+================================================== -->
+<div class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=How To Use Swift’s Ternary Operator&url=http://localhost:4000/how-to-use-swifts-ternary-operator/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=http://localhost:4000/how-to-use-swifts-ternary-operator/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/how-to-use-swifts-ternary-operator/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+
+        </div>
+
+        <!-- Post -->
+        
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                <!-- Author Box -->
+                
+                <div class="row post-top-meta">
+                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                        
+                        <img class="author-thumb" src="https://www.gravatar.com/avatar/f9a9dcfcfe808631ad042a6653a27be4?s=250&d=mm&r=x" alt="Jeff Morhous">
+                        
+                    </div>
+                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                        <a target="_blank" class="link-dark" href="">Jeff Morhous</a><a target="_blank" href="https://twitter.com/jeffmorhous" class="btn follow">Follow</a>
+                        <span class="author-description">Jeff is a Software Consultant specializing in iOS development. He enjoys making new things, fixing old things, and learning from everything.</span>
+                    </div>
+                </div>
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">How To Use Swift’s Ternary Operator</h1>
+
+            </div>
+
+            <!-- Post Featured Image -->
+            
+
+            
+            <img class="featured-image img-fluid" src="https://cdn-images-1.medium.com/max/1600/1*D3ujgVPO9LiSopCrQdCB2g.jpeg" alt="How To Use Swift’s Ternary Operator">
+            
+
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <p>Ternary operators are beyond cool. They’re an easy way to do some if-else logic all on one line. Beyond that, they’re still easy to read and understand, so you don’t have to sacrifice readability for the ‘cool factor’ of using a language’s advanced features. In fact, it’s a great way to keep methods shorter and draw attention to other logic that may be more meaningful to your program.</p>
+
+<h3 id="start-with-an-if-else-statement">Start With An If-Else Statement</h3>
+
+<p>Take the below code for example. You compare two variables, and print something based on the result.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>if variable1 == variable2 {
+    print("Equality! 🥳")
+} else {
+    print("NO EQUALITY 🤬")
+}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="convert-it-to-one-line">Convert It To One Line</h3>
+<p>The ternary operator consists of 3 parts.</p>
+<ol>
+  <li>A conditional check</li>
+  <li>The result of the operation if the conditional is true</li>
+  <li>The result of the operation if the conditional is false</li>
+</ol>
+
+<p>For our above if-else statement, we could write it like this 👇</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>print(variable1 == variable2 ? "Equality! 🥳" : "NO EQUALITY 🤬")
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="assigning-a-value">Assigning A Value</h3>
+
+<p>Ternary operations in Swift aren’t limited to just print statements. In fact, the ternary operator returns a value which can be used to set a variable.</p>
+
+<p>You could take the below check for the age to drink alcohol</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre>var result = “”
+
+if(age &lt; 21){  
+  result = "Too young to drink 🍺"  
+} else {  
+  result = "Old enough to drink 🍻"  
+}
+
+print(result)
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>This is a lot of code to just assign a string based on a number value. We can use the ternary operator to do this in just 2 lines — and you can see the example below 👇</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>let result = age &gt; 21 ? 
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<p>If you found this helpful, you might enjoy <a href="https://gum.co/codeforhumans">checking out my book on learning to program with Swift</a>!</p>
+
+            </div>
+
+            <!-- Rating -->
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2021-01-15">15 Jan 2021</time></span>           
+                
+                </small>
+            </p>
+
+            <!-- Post Categories -->
+            <div class="after-post-cats">
+                <ul class="tags mb-4">
+                    
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#Tutorial">Tutorial</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- End Categories -->
+
+            <!-- Post Tags -->
+            <div class="after-post-tags">
+                <ul class="tags">
+                    
+                    
+                </ul>
+            </div>
+            <!-- End Tags -->
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            <!-- End Adsense -->
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="//should-I-major-in-computer-science/"> &laquo; Should I Major in Computer Science?</a>
+            
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 text-center text-lg-left">
+                Copyright © 2021 Jeff Morhous 
+            </div>
+            <div class="col-md-4 col-sm-4 text-center text-lg-center">
+                <a href="https://iosbynight.substack.com/">Subscribe to my newsletter, iOS By Night 🌚</a>
+            </div>
+            <div class="col-md-4 col-sm-4 text-center text-lg-right">    
+                <a href="mailto:hireme@jeffmorhous.com?subject=Freelance Work Inquiry">Contact me</a> if you'd like a site designed!
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts
+================================================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="/assets/js/mediumish.js"></script>
+
+
+
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+</body>
+</html>
