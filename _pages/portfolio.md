@@ -7,6 +7,11 @@ comments: true
 
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
+  <h4>SimplyPaid</h4>
+  <p>Creating a Software As A Service app using <b>Ruby on Rails</b> that allows contract workers to track billable time and automatically bill clients. Using to hone skills in <b>Rails, Git, AWS, and Stripe Integrations</b>. Currently in development, expected to deploy Summer 2021.</p>
+  <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/simply-paid.png" alt="SimplyPaid promo image"/></p>
+  <hr>
+  
   <h4>Github Followers</h4>
   <p>Created an iOS app that interfaces with the Github API to browse users and their followers. Created while taking <a href="https://seanallen.teachable.com/p/take-home">Sean Allen's Take Home Project Course</a>. Used <b>Swift and UIKit with Programmatic UI</b>, made network calls using URLSession, persisted data using UserDefaults, and explored CollectionViews with DiffableDataSource. You can see <a href="https://github.com/JeffMorhous/Github-Followers">my code on Github here.</a></p>
   <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/gh-followers.png" alt="Github Followers promo image"/></p>

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jeff Morhous</title>
-    <description>Software Engineer Specializing in iOS. I write about programming, productivity, and occasionally tech.</description>
+    <description>Software Engineer and Senior Computer Science Student. I write about programming, productivity, and occasionally tech.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 Jan 2021 11:49:38 -0500</pubDate>
-    <lastBuildDate>Fri, 15 Jan 2021 11:49:38 -0500</lastBuildDate>
+    <pubDate>Tue, 16 Feb 2021 14:00:32 -0500</pubDate>
+    <lastBuildDate>Tue, 16 Feb 2021 14:00:32 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
