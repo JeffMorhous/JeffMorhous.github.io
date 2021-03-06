@@ -82,4 +82,4 @@ Frank comes from an IT background, and landed an iOS development job in the midd
 
 I hope you enjoyed reading about Frank’s story as much as I did writing it up for you. Thanks, Frank, for letting me talk about your story! You can [find Frank on twitter](https://twitter.com/frankefoster), where he is an active member of the thriving tech community.
 
-You can also [find me on twitter](https://twitter.com/JeffMorhous), or follow me here. If you want to be notified when I write something else, you can [join my newsletter](https://iosbynight.substack.com/).
+You can also [find me on twitter](https://twitter.com/JeffMorhous), or follow me here. If you want to be notified when I write something else, you can [join my newsletter](https://www.getrevue.co/profile/jeffmorhous).

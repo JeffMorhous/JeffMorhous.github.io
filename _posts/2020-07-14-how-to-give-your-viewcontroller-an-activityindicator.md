@@ -35,4 +35,4 @@ UIKit provides a nifty little spinning wheel we can display to the user when weâ
 This is such a small UI feature that has a huge benefit. If you implement it correctly, the people that use your app will probably never consciously notice it. But if you donâ€™t implement this, users will likely feel like your app is slow, or mistake a normal wait time for a buggy freeze of the app. Hope you got some value out of this, I know your users will!
 
 ----------
-<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+If you liked this, you might like to get updates from me when I write or make something new. I promise I won't spam you, and you can unsubscribe anytime. <a href="https://www.getrevue.co/profile/jeffmorhous">Sign up here.</a>

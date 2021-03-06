@@ -57,4 +57,4 @@ If I have a big task, like a paper, it’s common that I’ll add some subtasks 
 Before you ask, no this article isn’t an advertisement. This app has just been so helpful in helping me organize that I thought it would be great to share. I hope you find it as helpful as I have. By no means do I think my way is the only way when it comes to organization. It works for me, and it will probably work for you. But **you know what would work even better for you? A system you tweak to your liking**!
 
 ---------
-<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+If you liked this, you might like to get updates from me when I write or make something new. <a href="https://www.getrevue.co/profile/jeffmorhous">Sign up here.</a> No spam, unsubscribe anytime.

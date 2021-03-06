@@ -49,4 +49,4 @@ No one really knows why LiDAR was included in this years revision of the iPad Pr
 The iPad Pro definitely deserves it’s “Pro” name, even if it’s not obvious at first glance. All of these subtle improvements over the base model really pull together for a best-in-class experience. I definitely won’t tell you which iPad to buy, but I’m super happy with the Pro 😉
 
 --------
-<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+If you liked this, you might like to get updates from me when I write or make something new. I promise I won't spam you, and you can unsubscribe anytime. <a href="https://www.getrevue.co/profile/jeffmorhous">Sign up here.</a>

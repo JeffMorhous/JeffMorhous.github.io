@@ -107,4 +107,4 @@ So you visit a website and it loads. Next, the website asks its ad provider for 
 An interesting note is that Pi-hole won’t kill youtube ads, as youtube serves its content and advertisements from the same DNS, so killing youtube ads would also kill youtube.
 
 ----------
-<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+If you liked this, you might like to get updates from me when I write or make something new. <a href="https://www.getrevue.co/profile/jeffmorhous">Sign up here.</a> No spam, unsubscribe anytime.

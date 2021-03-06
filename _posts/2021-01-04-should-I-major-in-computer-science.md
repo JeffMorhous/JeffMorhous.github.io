@@ -83,4 +83,4 @@ Even if you do major in Computer Science, college won’t teach you everything y
 
 ----------
 
-If this helped you, let me know! If you think it sucked, let me know why! And if you want to see more of my story, you can [follow me on twitter](https://twitter.com/JeffMorhous) or you can [join my newsletter](https://iosbynight.substack.com/).
+If this helped you, let me know! If you think it sucked, let me know why! And if you want to see more of my story, you can [follow me on twitter](https://twitter.com/JeffMorhous) or you can [join my newsletter](https://www.getrevue.co/profile/jeffmorhous).

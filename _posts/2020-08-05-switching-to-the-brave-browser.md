@@ -46,4 +46,4 @@ Anyways, all that to say, Brave’s private browsing is a whole lot more private
 #### Brave is a browser that feels and acts a lot like Chrome, but lets you step outside the Google ecosystem and retake control over some of your digital footprint.
 
 --------
-<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+If you liked this, you might like to get updates from me when I write or make something new. I promise I won't spam you, and you can unsubscribe anytime. <a href="https://www.getrevue.co/profile/jeffmorhous">Sign up here.</a>

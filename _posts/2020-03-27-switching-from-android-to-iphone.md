@@ -48,4 +48,4 @@ I’ll be honest, Apple’s stance on encryption is bold and attractive to me as
 Making the switch from Android to the iPhone was a lot like my jump from Windows to Mac. It took me years to work up the guts but I’m definitely not regretting it. Yes, Apple charges significantly more for products that compare equally on a technical level. The “Apple Tax” is very real, and a barrier for many. If you’re trying to decide if that price jump is worth it for you, talk to some friends, and ask them what they like about their iPhone! Go into the Apple store and get hands-on with them 👨‍🔬
 
 ----------
-<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+If you liked this, you might like to get updates from me when I write or make something new. I promise I won't spam you, and you can unsubscribe anytime. <a href="https://www.getrevue.co/profile/jeffmorhous">Sign up here.</a>

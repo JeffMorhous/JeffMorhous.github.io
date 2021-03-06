@@ -35,5 +35,4 @@ As with any skill,  **practice works wonders**.
 Think of the time you spend focusing as an investment in any future time you need to focus. Each time it get’s a little easier to fight off distractions for just a little longer.
 
 ---
-This post was originally sent out on my newsletter, iOS By Night. If you want to see stuff like this when it first comes out, be sure to subscribe there!
-<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+If you liked this, you might like to get updates from me when I write or make something new. I promise I won't spam you, and you can unsubscribe anytime. <a href="https://www.getrevue.co/profile/jeffmorhous">Sign up here.</a>

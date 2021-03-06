@@ -63,4 +63,4 @@ Your method for doing this will definitely vary, but I used
 And that’s it! You have a custom textbox that kind of floats above the view you put it in.
 
 ------------
-<iframe src="https://iosbynight.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+If you liked this, you might like to get updates from me when I write or make something new. I promise I won't spam you, and you can unsubscribe anytime. <a href="https://www.getrevue.co/profile/jeffmorhous">Sign up here.</a>
