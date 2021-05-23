@@ -4,8 +4,8 @@ title:  "My Favorite Productivity Tips"
 author: jeff
 categories: [ College, Productivity ]
 image: https://cdn-images-1.medium.com/max/2400/0*w_ZGw91gD208fqWQ
-featured: true
-hidden: true
+featured: false
+hidden: false
 ---
 
 > If a craftsman wants to do good work, he must first sharpen his tools. — Confucius

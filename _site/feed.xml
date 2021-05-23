@@ -5,9 +5,105 @@
     <description>Software Engineer and Senior Computer Science Student. I write about programming, productivity, and occasionally tech.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 06 Mar 2021 17:39:31 -0500</pubDate>
-    <lastBuildDate>Sat, 06 Mar 2021 17:39:31 -0500</lastBuildDate>
+    <pubDate>Sun, 23 May 2021 16:44:51 -0400</pubDate>
+    <lastBuildDate>Sun, 23 May 2021 16:44:51 -0400</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>How I Built and Launched a SaaS App In 2 Days</title>
+        <description>&lt;p&gt;A little over a week ago, I launched &lt;a href=&quot;http://findrailswork.com&quot;&gt;RailsWork&lt;/a&gt;, a job board for Ruby on Rails developers. In this post I’m going to talk about the why of my project and also the how, and the tools I’ve used along the way. Feel free to skip around 👀&lt;/p&gt;
+
+&lt;p&gt;Like a lot of folks, I have a bad habit of starting projects and then completely abandoning them for the next big thing. I actually managed to launch 2 iOS apps last year, and 2 Android apps the year before that. Funny enough, I’ve spent the last year doing more web application development than mobile, and I figured it’s time that my side project portfolio reflected that.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I wanted to create a web app that accomplished a few goals&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Force me to learn something 📚&lt;/li&gt;
+  &lt;li&gt;Show off my skills in web application development 🧑‍💻&lt;/li&gt;
+  &lt;li&gt;Solved a problem I face (more on this later) 👀&lt;/li&gt;
+  &lt;li&gt;Makes me some money 💰&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Beyond that, I wanted to actually launch the application and get it in the hands of people.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;starting-with-the-problem&quot;&gt;Starting With The Problem&lt;/h3&gt;
+
+&lt;p&gt;I’m a college student, and spent a lot of time in the last few years looking for jobs and internships. Right now, a lot of my skillset is in Ruby on Rails, so I was looking for jobs where I could leverage and build on that. So even though it’s not an incredibly complex application, I decide to build a job board niched into Ruby on Rails developers.&lt;/p&gt;
+
+&lt;p&gt;There’s are two existing job boards in this space that solve the problem, but the design and experience leaves something to be desired.&lt;/p&gt;
+
+&lt;p&gt;There are actually two distinct kinds of people that use a job boards: Those looking to find a job and those looking to post a job. This obviously brings up the issue of needing enough seekers to support the posters and vice-versa. To counteract this, I decided to make job posting free for now, and soon I’ll be posting jobs myself to add value for job-seekers. Once I’ve built up enough of a consistent userbase, I’ll flip the switch on Stripe and start charging employers to post a job.&lt;/p&gt;
+
+&lt;h3 id=&quot;starting-development-of-a-saas-application&quot;&gt;Starting Development of a SaaS Application&lt;/h3&gt;
+
+&lt;p&gt;Ironically enough, I used Ruby on Rails to build the job board. I started by generating a new Rails application (yay Rails 6!) and integrating &lt;a href=&quot;https://tailwindcss.com/&quot;&gt;TailwindCSS&lt;/a&gt;. Tailwind is a utilitity CSS framework that I’m leveraging to make consistently pleasant designs with an incredible pace. I’d definitely recommend it for almost any project.&lt;/p&gt;
+
+&lt;p&gt;Next, I implemented an authentication system so that users could create an account and log in or log out. I followed that up by creating a Job model and both the views and the logic for users to Create, Read, Update, or Delete (CRUD) jobs. This is a pretty simple application from that respect, so up til this point was only an hour or so of work 🥳&lt;/p&gt;
+
+&lt;h3 id=&quot;user-experience-improvements&quot;&gt;User Experience Improvements&lt;/h3&gt;
+
+&lt;p&gt;Even though I was using Tailwind, my views kind of sucked at this point. I have views for creating an account, logging in, viewing all the jobs, viewing an individual job, editing a job, or creating a job. I spent a great deal of time iterating on this and I’m still trying to get it right.&lt;/p&gt;
+
+&lt;p&gt;Here’s one of the earlier versions of the homepage. It’s pretty emoji-heavy 😅&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*olLY9y8RVbtQUSWhk7on7g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I settled on making the root of the page (the landing page) the index for job postings. So when you go to &lt;a href=&quot;http://www.findrailswork.com&quot;&gt;www.findrailswork.com&lt;/a&gt; , you’ll immediately see job postings sorted by recent postings. I figured this is the most valuable page on the site, so I might as well make it the first.&lt;/p&gt;
+
+&lt;p&gt;I added markdown support for job descriptions, so folks posting the job can customize it a bit. I also swapped out some colors and made it more remote friendly. Front-end design is a lot of work and I don’t know how everyone gets so good at it. In time I suppose. I also truncated job descriptions so the cards for postings wouldn’t go on forever, swapped all the button colors for a fun gradient, and styled the headline with that same gradient.&lt;/p&gt;
+
+&lt;p&gt;After all that, it looks like this as of the time of writing, though I’m still rapidly iterating.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*x2LElP8vfhJ7UYIcUFe6aw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;deployment&quot;&gt;Deployment&lt;/h3&gt;
+
+&lt;p&gt;Next I did something completely outside my comfort zone and actually deployed the application to production! This is daunting, and nothing like sending an app to the Android or iOS App Stores.&lt;/p&gt;
+
+&lt;p&gt;I registered the domain with Google domains for $12 a year, and figured all of this learning was worth at least $12 even if the project completely flopped. Next, I used my student discount to get 2 free years of a Hobby Dyno with Heroku. (If you’re a college student, checkout the Github Student Pack, it’s mindblowing and completely free)&lt;/p&gt;
+
+&lt;p&gt;I was fortunate enough to have been tracking the project with Git from the beginning, so deploying wasn’t too bad. I had to swap out my sqlite3 database for postgres, but that didn’t take too much work. I also had to fix a Tailwind bug, but inside of 2 hours my app was live on my domain for the world to see :) After 2 days of banging my head against the wall, I created a very minimal but functional product and put it on the internet for anyone to use. I was eletated and still am at how accessible this is.&lt;/p&gt;
+
+&lt;p&gt;So far the site has cost me $12/year for the domain and $0 for the next 2 years to host, after which it will cost $7/mo.&lt;/p&gt;
+
+&lt;h3 id=&quot;production-app-nice-to-haves&quot;&gt;Production App Nice-to-Haves&lt;/h3&gt;
+
+&lt;p&gt;Now that my application was in production, there were some things I wanted to have settled before I spent any time looking for users.&lt;/p&gt;
+
+&lt;p&gt;First, I automated deployments. I setup Heroku with a Github Action to detect any new commits on the main branch and automatically trigger a deployment. This has already saved me time and it’s so fun to just &lt;em&gt;git push&lt;/em&gt; and have my app update less than a minute later.&lt;/p&gt;
+
+&lt;p&gt;I’m not immune to bugs, in fact I write plenty of bugs. I wanted to know when my 💩 code was affecting my users so I added Honeybadger. Honeybadger took less than 5 minutes to add to my app, and will send me an email with a detailed crash report anytime there’s an error in production. Plus they have a fun name. I don’t have a lot of errors (yet), so Honeybadger is free for me.&lt;/p&gt;
+
+&lt;p&gt;I also wanted to know how my users were using my app, and how my changes to it are received. I wanted an analytics solution that didn’t invade user’s privacy. I’ve heard a lot of good things about &lt;a href=&quot;https://plausible.io/&quot;&gt;Plausible&lt;/a&gt;, but I wasn’t quite ready to go for their pricing. I went with &lt;a href=&quot;https://splitbee.io/&quot;&gt;Splitbee&lt;/a&gt;, which respects user privacy, has really easy-to-understand analytics, wonderful design, and happens to be free for my traffic level!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*C_yGmMPeLBbYT2j3nx2iUA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I also added an administrative tool that essentially acts as a GUI wrapper for the Rails console so that I can manipulate database data quickly if something catastrophic requires my intervention. This hasn’t come in handy yet but I have a feeling that at some point I’ll be grateful it’s already there. Again, free!&lt;/p&gt;
+
+&lt;h3 id=&quot;whats-next&quot;&gt;What’s Next&lt;/h3&gt;
+
+&lt;p&gt;It’s only been a week, and I have a lot planned for this app. It’s a pretty basic CRUD app with a really solid foundation to build off, so I’m excited to see where it goes.&lt;/p&gt;
+
+&lt;p&gt;First, I’d like to make the job board itself a little more usable. I plan on adding filters for job seekers to filter by remote, salary, location, and more. I also want to add an automated mailer that will send a weekly email to subscribers with any new postings, but I don’t know where to begin with that.&lt;/p&gt;
+
+&lt;p&gt;The application certainly needs a lot of search-engine-optimization in order to show up in search results. I figure the best way to start ranking when people search of Rails jobs is to become a valuable place to look for Rails jobs! That’s why I’ll be adding jobs myself for quite a while to keep the job board up to date, and I also added a resources page that I’ll fill with tutorials and blogs about becoming a better Rails developer.&lt;/p&gt;
+
+&lt;p&gt;At some point along the way, I’ll integrate Stripe to handle user payments. I figure recruiters will want to see some data on their ROI, so I want to wait until analytics show between 300–600 hits a month, or 10–20 a day. I plan to use Stripe Checkout and just charge a single fee for job postings. Still debating on pricing so if you have any ideas let me know!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;It’d mean a lot to me if you checked out &lt;a href=&quot;http://findrailswork.com&quot;&gt;RailsWork&lt;/a&gt; and let me know what you think. You can follow along with the app’s development progress by &lt;a href=&quot;https://twitter.com/JeffMorhous&quot;&gt;following me on twitter&lt;/a&gt; or &lt;a href=&quot;https://www.getrevue.co/profile/jeffmorhous&quot;&gt;subscribing to my newsletter&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 May 2021 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/how-i-built-and-launched-a-saas-app-in-2-days/</link>
+        <guid isPermaLink="true">http://localhost:4000/how-i-built-and-launched-a-saas-app-in-2-days/</guid>
+        
+        
+        <category>Build in Public</category>
+        
+      </item>
     
       <item>
         <title>How To Use Swift’s Ternary Operator</title>
@@ -665,42 +761,6 @@ activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive
         <pubDate>Fri, 15 May 2020 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/how-to-customize-uitextview/</link>
         <guid isPermaLink="true">http://localhost:4000/how-to-customize-uitextview/</guid>
-        
-        
-        <category>Tutorial</category>
-        
-      </item>
-    
-      <item>
-        <title>How to Set Up Programmatic Interfaces in iOS</title>
-        <description>&lt;p&gt;There are plenty of valid reasons to use storyboards or to programmatically lay out your interface. Storyboards let us quickly build out a beautiful interface, but face limitations and scale problems. If you have a team working on an app, then Storyboards can get messy and hard to keep track of with version control. Once you decide that storyboards aren’t the tool for you, Xcode takes some tinkering to set things up to lay out your interface in Swift. After you create your project,&lt;/p&gt;
-
-&lt;p&gt;First,  &lt;strong&gt;delete&lt;/strong&gt;  the  &lt;em&gt;Main.storyboard.&lt;/em&gt; Yup, delete it entirely.&lt;/p&gt;
-
-&lt;p&gt;Then, we have to delete any reference to it- The first spot we need to take care of is the reference to  &lt;em&gt;Main.storyboard&lt;/em&gt;  in  &lt;em&gt;Info.plist&lt;/em&gt; — Go ahead and  &lt;strong&gt;delete the entry by clicking the minus sign&lt;/strong&gt;. The last place it’s referenced is in the  &lt;em&gt;Deployment Info&lt;/em&gt; section of your project settings. A dropdown for  &lt;em&gt;Main Interface&lt;/em&gt;  will still say Main.storyboard,  &lt;strong&gt;Select the empty option in the dropdown&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Next, add the following to your SceneDelegate.swift&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;guard let windowScene = (scene as? UIWindowScene) else { return }
-window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-window?.windowScene = windowScene
-window?.rootViewController = ViewController()
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now, you can specify your actual layout in ViewController.swift!&lt;/p&gt;
-
-&lt;p&gt;You’re all set up to implement the design of your dreams programmatically, and  &lt;a href=&quot;https://softauthor.com/ios-ui-design-programmatically-xcode-9-swift-4&quot;&gt;here’s a quick reference to help you get the hang of it&lt;/a&gt;!&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;If you liked this, you might like to get updates from me when I write or make something new. I promise I won’t spam you, and you can unsubscribe anytime. &lt;a href=&quot;https://www.getrevue.co/profile/jeffmorhous&quot;&gt;Sign up here.&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 13 Apr 2020 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/how-to-set-up-programmatic-interfaces-in-ios/</link>
-        <guid isPermaLink="true">http://localhost:4000/how-to-set-up-programmatic-interfaces-in-ios/</guid>
         
         
         <category>Tutorial</category>
